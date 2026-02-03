@@ -9,10 +9,12 @@ function fn() {
     myVarName: 'someValue'
   }
   if (env == 'dev') {
+    config.userEmail = 'elosvadel84@gmail.com'
+    config.userPassword = 'Osva12345'
+  } else if (env == 'qa') {
     // customize
-    // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
-    // customize
+    config.userEmail = 'elosvadel84@test.com'
+    config.userPassword = 'Osva123456'
   }
   return config;
 }
