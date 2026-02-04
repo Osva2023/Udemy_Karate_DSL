@@ -1,8 +1,10 @@
-
+@debug
 Feature: Test for the aplication home page
 
     Background: Define URL
         Given url 'https://conduit-api.bondaracademy.com/api/'
+        * def timeValidator = read('classpath:conduitApp/helpers/TimeValidator.js')
+
     Scenario: Get all Tags 
         Given path 'tags'
         When method Get
@@ -18,7 +20,26 @@ Feature: Test for the aplication home page
         Given path 'articles'
         When method Get
         Then status 200
-        And match response.articles == '#[10]' 
-        And match response.articlesCount == 10  
-
+        * def articleSchema = 
+        """  
+        {
+            slug: '#string',
+            title: '#string',
+            description: '#string',
+            body: '#string',
+            tagList: '#array',
+            createdAt: '#? timeValidator(_)',
+            updatedAt: '#? timeValidator(_)',
+            favorited: '#boolean',
+            favoritesCount: '#number',
+            author: {
+                username: '#string',
+                bio: '##string',
+                image: '#string',
+                following: '#boolean'
+            }
+        }
+        """
+        And match each response.articles == articleSchema
+        And match response.articlesCount == 10
    

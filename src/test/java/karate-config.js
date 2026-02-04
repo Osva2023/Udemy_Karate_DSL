@@ -6,7 +6,8 @@ function fn() {
   }
   var config = {
     env: env,
-    myVarName: 'someValue'
+    myVarName: 'someValue',
+    apiUrl: 'https://conduit-api.bondaracademy.com/api/' 
   }
   if (env == 'dev') {
     config.userEmail = 'elosvadel84@gmail.com'
