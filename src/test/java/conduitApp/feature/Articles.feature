@@ -1,27 +1,58 @@
-
+@random
 Feature: Testing Articles
 
     Background: Define URL
         # Obtener el token usando el helper
     * def tokenResult = callonce read('classpath:conduitApp/helpers/CreateToken.feature') 
     * def token = tokenResult.authToken
-    * print 'TOKEN FINAL >>>', token
     Given url 'https://conduit-api.bondaracademy.com/api/'
+    * def DataGenerator = Java.type('conduitApp.helpers.DataGenerator')
+
     Scenario: Create a new article
+        * def articleData = DataGenerator.getRandomArticleValues()
+        * def randomTitle  = articleData.title
+        * def randomDescription = articleData.description
+        * def randomBody = articleData.body
+        * def randomTag = DataGenerator.getRandomTag()
         Given header Authorization = 'Token ' + token
         Given path 'articles'
-        And request { "article": {"title": "The better article ever45","description": "this is a new another again article, nothing important still","body": "weel, keep studying, tedsting again","tagList": ["Slack"]}}
+        And request 
+        """
+        { "article": {
+            "title": "#(randomTitle)",
+            "description": "#(randomDescription)",
+            "body": "#(randomBody)",
+            "tagList": ["#(randomTag)"]
+            }
+        }
+        """
+
         When method Post
         Then status 201 
-        And match response.article.title == 'The better article ever45'
-        And match response.article.tagList == ['Slack']
+        And match response.article.title == randomTitle
+        
 
-@debug
+
     Scenario: Create and delete an article
-        * print 'TOKEN VALUE IS >>>', token
+        * def articleData = DataGenerator.getRandomArticleValues()
+        * def randomTitle = articleData.title
+        * def randomDescription = articleData.description
+        * def randomBody = articleData.body
+        * def randomTag = DataGenerator.getRandomTag()
+        
         Given header Authorization = 'Token ' + token
         Given path 'articles'
-        And request { "article": {"title": "Article for delete","description": "testing how to create and delete","body": "delete it baby","tagList": ["Slack"]}}
+        And request 
+        """
+            {
+                "article": {
+                    "title": "#(randomTitle)",
+                    "description": "#(randomDescription)",
+                    "body": "#(randomBody)",
+                    "tagList": ["#(randomTag)"]
+                }
+            }
+        """
         When method Post
         Then status 201
         * def articleId = response.article.slug
@@ -31,7 +62,11 @@ Feature: Testing Articles
         Given path 'articles'
         When method Get
         Then status 200
-        And match response.articles[0].title == 'Article for delete'
+        * def createdArticle = response.articles.find(x => x.slug == articleId)
+        And match createdArticle != null
+        And match createdArticle.title == randomTitle
+        And match createdArticle.tagList contains randomTag
+
 
         Given header Authorization = 'Token ' + token
         Given path 'articles', articleId
@@ -42,6 +77,8 @@ Feature: Testing Articles
         Given path 'articles'
         When method Get
         Then status 200
-        And match response.articles[0].title != 'Article for delete'
+        * def deletedArticle = response.articles.find(x => x.slug == articleId)
+        And match deletedArticle == null
+        
 
         

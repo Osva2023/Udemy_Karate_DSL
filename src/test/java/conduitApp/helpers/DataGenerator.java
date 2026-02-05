@@ -1,6 +1,10 @@
 package conduitApp.helpers;
 
+import java.util.List;
+
 import com.github.javafaker.Faker;
+import java.util.Random;
+import java.util.Arrays;
 
 import net.minidev.json.JSONObject;
 
@@ -28,6 +32,22 @@ public class DataGenerator {
         json.put("description", description);
         json.put("body", body);
         return json;
+    }
+    public static String getRandomTag() {
+        List<String> tags = Arrays.asList(
+            "Test",
+            "Git",
+            "YouTube",
+            "Blog",
+            "Slack",
+            "Bondar Academy",
+            "Zoom",
+            "GitHub",
+            "Value-Focused",
+            "Start for Free"
+        );
+        Random random = new Random();
+        return tags.get(random.nextInt(tags.size()));
     }
 
 }
