@@ -3,7 +3,7 @@ Feature: Test for the aplication home page
 
     Background: Define URL
         Given url 'https://conduit-api.bondaracademy.com/api/'
-        * def timeValidator = read('classpath:conduitApp/helpers/TimeValidator.js')
+        * def timeValidator = read('classpath:conduitApp/helpers/timeValidator.js')
 
     Scenario: Get all Tags 
         Given path 'tags'
