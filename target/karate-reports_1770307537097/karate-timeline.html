@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"conduitApp\/feature\/SignUpUsers[1:7]","start":1770238947946,"end":1770238949092,"title":"conduitApp\/feature\/SignUpUsers[1:7] 16:02:27.946-16:02:29.092 New User sign up"},{"id":2,"group":2,"content":"conduitApp\/feature\/SignUpUsers[2.1:49]","start":1770238947946,"end":1770238948958,"title":"conduitApp\/feature\/SignUpUsers[2.1:49] 16:02:27.946-16:02:28.958 Validate Sign Up error messages"},{"id":3,"group":3,"content":"conduitApp\/feature\/SignUpUsers[2.2:50]","start":1770238947946,"end":1770238948961,"title":"conduitApp\/feature\/SignUpUsers[2.2:50] 16:02:27.946-16:02:28.961 Validate Sign Up error messages"},{"id":4,"group":4,"content":"conduitApp\/feature\/SignUpUsers[2.3:51]","start":1770238947946,"end":1770238948958,"title":"conduitApp\/feature\/SignUpUsers[2.3:51] 16:02:27.946-16:02:28.958 Validate Sign Up error messages"},{"id":5,"group":5,"content":"conduitApp\/feature\/SignUpUsers[2.4:52]","start":1770238947946,"end":1770238948958,"title":"conduitApp\/feature\/SignUpUsers[2.4:52] 16:02:27.946-16:02:28.958 Validate Sign Up error messages"},{"id":6,"group":5,"content":"conduitApp\/feature\/SignUpUsers[2.5:53]","start":1770238948966,"end":1770238949176,"title":"conduitApp\/feature\/SignUpUsers[2.5:53] 16:02:28.966-16:02:29.176 Validate Sign Up error messages"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

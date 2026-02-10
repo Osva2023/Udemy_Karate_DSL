@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"456faa78-7294-44eb-8067-e3ffcca15b85",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>conduitApp.feature.Articles</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-02-05 11:11:32 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>Create a new article</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:36]"><span>[2:36]</span> <span>Create and delete an article</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">conduitApp/feature/Articles.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testing Articles</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">Create a new article</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1063</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Obtener el token usando el helper</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenResult = callonce read(&#39;classpath:conduitApp/helpers/CreateToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">784</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">11:11:31.856 &lt;&lt; lock released, cached callonce: read(&#39;classpath:conduitApp/helpers/CreateToken.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">conduitApp.helpers.CreateToken</div>
+      </div>
+      <div class="time-cell passed">759</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://conduit-api.bondaracademy.com/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.4">11:11:31.014 karate.env system property was: null 
+11:11:31.084 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:conduitApp/helpers/CreateToken.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { &quot;user&quot;: { &quot;email&quot;: &quot;#(userEmail)&quot;, &quot;password&quot;: &quot;#(userPassword)&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">55</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">696</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.7">11:11:31.302 request:
+1 &gt; POST https://conduit-api.bondaracademy.com/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 65
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;elosvadel84@gmail.com&quot;,&quot;password&quot;:&quot;Osva12345&quot;}}
+
+11:11:31.846 response time in milliseconds: 540
+1 &lt; 200
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;136-bwng6ErvEaYWqWFwyTV5ysdtPeA&quot;
+1 &lt; x-cloud-trace-context: 1891ac5e11a6f33627ff2034d49ffea2;o=1
+1 &lt; date: Thu, 05 Feb 2026 16:11:31 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 310
+{&quot;user&quot;:{&quot;email&quot;:&quot;elosvadel84@gmail.com&quot;,&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MDMwNzg5MSwiZXhwIjoxNzc1NDkxODkxfQ.A9o6CQsd8sCJTiDemaJbPMdQJGQEjhDbKTFfBcNXnG0&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;INSIDE HELPER - TOKEN IS &gt;&gt;&gt;&#39;, authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.10">11:11:31.855 [print] INSIDE HELPER - TOKEN IS &gt;&gt;&gt; eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MDMwNzg5MSwiZXhwIjoxNzc1NDkxODkxfQ.A9o6CQsd8sCJTiDemaJbPMdQJGQEjhDbKTFfBcNXnG0 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenResult.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://conduit-api.bondaracademy.com/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def DataGenerator = Java.type(&#39;conduitApp.helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def articleData = DataGenerator.getRandomArticleValues()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">31</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomTitle  = articleData.title</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomDescription = articleData.description</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomBody = articleData.body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomTag = DataGenerator.getRandomTag()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Token &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.19">{ &quot;article&quot;: {
+    &quot;title&quot;: &quot;#(randomTitle)&quot;,
+    &quot;description&quot;: &quot;#(randomDescription)&quot;,
+    &quot;body&quot;: &quot;#(randomBody)&quot;,
+    &quot;tagList&quot;: [&quot;#(randomTag)&quot;]
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">232</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">11:11:31.905 request:
+1 &gt; POST https://conduit-api.bondaracademy.com/api/articles
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MDMwNzg5MSwiZXhwIjoxNzc1NDkxODkxfQ.A9o6CQsd8sCJTiDemaJbPMdQJGQEjhDbKTFfBcNXnG0
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 116
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;article&quot;:{&quot;title&quot;:&quot;Likely Luke&quot;,&quot;description&quot;:&quot;Oldtown&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[&quot;Slack&quot;]}}
+
+11:11:32.134 response time in milliseconds: 228
+1 &lt; 201
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;185-C8Vx6T/8nhrAPcwHZzylYP6X9oI&quot;
+1 &lt; x-cloud-trace-context: aaf515f232181bb50bd7aa8c4713fd9c
+1 &lt; date: Thu, 05 Feb 2026 16:11:32 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 389
+{&quot;article&quot;:{&quot;slug&quot;:&quot;Likely-Luke-45546&quot;,&quot;title&quot;:&quot;Likely Luke&quot;,&quot;description&quot;:&quot;Oldtown&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[&quot;Slack&quot;],&quot;createdAt&quot;:&quot;2026-02-05T16:11:32.126Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-05T16:11:32.126Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.article.title == randomTitle</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:36]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:36]</span>
+                <span class="scenario-name">Create and delete an article</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1250</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:36]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Obtener el token usando el helper</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenResult = callonce read(&#39;classpath:conduitApp/helpers/CreateToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">784</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">11:11:31.014 karate.env system property was: null 
+11:11:31.857 this thread waited 772 milliseconds for callonce lock: read(&#39;classpath:conduitApp/helpers/CreateToken.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenResult.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://conduit-api.bondaracademy.com/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def DataGenerator = Java.type(&#39;conduitApp.helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def articleData = DataGenerator.getRandomArticleValues()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">31</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomTitle = articleData.title</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomDescription = articleData.description</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomBody = articleData.body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomTag = DataGenerator.getRandomTag()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Token &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.44">{
+    &quot;article&quot;: {
+        &quot;title&quot;: &quot;#(randomTitle)&quot;,
+        &quot;description&quot;: &quot;#(randomDescription)&quot;,
+        &quot;body&quot;: &quot;#(randomBody)&quot;,
+        &quot;tagList&quot;: [&quot;#(randomTag)&quot;]
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">226</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.55">11:11:31.905 request:
+1 &gt; POST https://conduit-api.bondaracademy.com/api/articles
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MDMwNzg5MSwiZXhwIjoxNzc1NDkxODkxfQ.A9o6CQsd8sCJTiDemaJbPMdQJGQEjhDbKTFfBcNXnG0
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 191
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;article&quot;:{&quot;title&quot;:&quot;Torwold Browntooth&quot;,&quot;description&quot;:&quot;Tyrosh&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[&quot;Bondar Academy&quot;]}}
+
+11:11:32.128 response time in milliseconds: 223
+1 &lt; 201
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;1d7-R09c/1R7gZJ15DRaifeJjLlJs4A&quot;
+1 &lt; x-cloud-trace-context: 1323e65fa61d4d0ce8f93cbc0ece1b68
+1 &lt; date: Thu, 05 Feb 2026 16:11:32 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 471
+{&quot;article&quot;:{&quot;slug&quot;:&quot;Torwold-Browntooth-45546&quot;,&quot;title&quot;:&quot;Torwold Browntooth&quot;,&quot;description&quot;:&quot;Tyrosh&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[&quot;Bondar Academy&quot;],&quot;createdAt&quot;:&quot;2026-02-05T16:11:32.124Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-05T16:11:32.124Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def articleId = response.article.slug</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Token &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params { limit: 10, offset: 0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">192</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.62">11:11:32.132 request:
+2 &gt; GET https://conduit-api.bondaracademy.com/api/articles?limit=10&amp;offset=0
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MDMwNzg5MSwiZXhwIjoxNzc1NDkxODkxfQ.A9o6CQsd8sCJTiDemaJbPMdQJGQEjhDbKTFfBcNXnG0
+2 &gt; Host: conduit-api.bondaracademy.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+11:11:32.321 response time in milliseconds: 188
+2 &lt; 200
+2 &lt; x-powered-by: Express
+2 &lt; vary: Origin
+2 &lt; content-type: application/json; charset=utf-8
+2 &lt; etag: W/&quot;109e-GtqQyZzW1Uhys2HLYdkujH3alMc&quot;
+2 &lt; x-cloud-trace-context: 384759699764bf791c074b2308e0d7d5
+2 &lt; date: Thu, 05 Feb 2026 16:11:32 GMT
+2 &lt; server: Google Frontend
+2 &lt; Content-Length: 4254
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Likely-Luke-45546&quot;,&quot;title&quot;:&quot;Likely Luke&quot;,&quot;description&quot;:&quot;Oldtown&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;tagList&quot;:[&quot;Slack&quot;],&quot;createdAt&quot;:&quot;2026-02-05T16:11:32.126Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-05T16:11:32.126Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Torwold-Browntooth-45546&quot;,&quot;title&quot;:&quot;Torwold Browntooth&quot;,&quot;description&quot;:&quot;Tyrosh&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[&quot;Bondar Academy&quot;],&quot;createdAt&quot;:&quot;2026-02-05T16:11:32.124Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-05T16:11:32.124Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Eddard-Stark-45546&quot;,&quot;title&quot;:&quot;Eddard Stark&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[&quot;YouTube&quot;],&quot;createdAt&quot;:&quot;2026-02-05T16:11:09.831Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-05T16:11:09.831Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wynafrei-Whent-45546&quot;,&quot;title&quot;:&quot;Wynafrei Whent&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;A lion doesn&#39;t concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[&quot;GitHub&quot;],&quot;createdAt&quot;:&quot;2026-02-05T16:08:40.107Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-05T16:08:40.107Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Rickon-Stark-45546&quot;,&quot;title&quot;:&quot;Rickon Stark&quot;,&quot;description&quot;:&quot;Oldtown&quot;,&quot;body&quot;:&quot;All dwarfs are bastards in their father&#39;s eyes&quot;,&quot;tagList&quot;:[&quot;Value-Focused&quot;],&quot;createdAt&quot;:&quot;2026-02-05T16:05:39.899Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-05T16:05:39.899Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tywin-Lannister-45546&quot;,&quot;title&quot;:&quot;Tywin Lannister&quot;,&quot;description&quot;:&quot;Qarth&quot;,&quot;body&quot;:&quot;Never forget who you are. The rest of the world won&#39;t. Wear it like an armor and it can never be used against you.&quot;,&quot;tagList&quot;:[&quot;GitHub&quot;],&quot;createdAt&quot;:&quot;2026-02-05T16:05:39.880Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-05T16:05:39.880Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;at-home-45546&quot;,&quot;title&quot;:&quot;at home&quot;,&quot;description&quot;:&quot;lectures you can do at home&quot;,&quot;body&quot;:&quot;i am watching THe RIP&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2026-02-03T03:36:36.579Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-03T03:36:36.579Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;The-last-underreaten-article-45546&quot;,&quot;title&quot;:&quot;The last underreaten article&quot;,&quot;description&quot;:&quot;this is a new article, nothing important still&quot;,&quot;body&quot;:&quot;weel, keep studying, tedsting again&quot;,&quot;tagList&quot;:[&quot;Slack&quot;],&quot;createdAt&quot;:&quot;2026-02-02T19:56:55.678Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-02T19:56:55.678Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;The-last-article-45546&quot;,&quot;title&quot;:&quot;The last article&quot;,&quot;description&quot;:&quot;this is a new article, nothing important still&quot;,&quot;body&quot;:&quot;weel, keep studying, tedsting again&quot;,&quot;tagList&quot;:[&quot;Slack&quot;],&quot;createdAt&quot;:&quot;2026-02-02T19:55:51.488Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-02T19:55:51.488Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;one-article-45546&quot;,&quot;title&quot;:&quot;one article&quot;,&quot;description&quot;:&quot;nothing im[prtant&quot;,&quot;body&quot;:&quot;just stuydying, testing, learnign about karate DSL&quot;,&quot;tagList&quot;:[&quot;Slack&quot;],&quot;createdAt&quot;:&quot;2026-02-02T19:26:04.810Z&quot;,&quot;updatedAt&quot;:&quot;2026-02-02T19:26:04.810Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;Osva&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:20}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.articles[0].title == randomTitle</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.64">11:11:32.325 classpath:conduitApp/feature/Articles.feature:64
+And match response.articles[0].title == randomTitle
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;Likely Luke&#39;
+  &#39;Torwold Browntooth&#39;
+
+classpath:conduitApp/feature/Articles.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.articles[0].tagList contains randomTag</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Token &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref skipped">68</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;, articleId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref skipped">70</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref skipped">72</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>params { limit: 10, offset: 0}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref skipped">73</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref skipped">74</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref skipped">75</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref skipped">76</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.articles[0].title != randomTitle</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
