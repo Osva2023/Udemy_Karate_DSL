@@ -1,0 +1,39 @@
+package conduitApp.performance.createTokens;
+
+import com.intuit.karate.Runner;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
+
+public class CreateTokens {
+
+    private static final ArrayList<String> tokens = new ArrayList<>();
+    private static AtomicInteger counter = new AtomicInteger();
+
+    private static String[] emails = {
+            "kardemo1@test.com",
+            "kardemo2@test.com",
+            "kardemo3@test.com"
+    };
+
+    public static String getNextToken() {
+        return tokens.get(counter.getAndIncrement() % tokens.size());
+    };
+
+    public static void createAccessTokens() {
+        System.out.println("=== Starting token generation for 3 users ===");
+        for (String email : emails) {
+            Map<String, Object> account = new HashMap<>();
+            account.put("userEmail", email);
+            account.put("userPassword", "Welcome1");
+            System.out.println("Generating token for: " + email);
+            Map<String, Object> result = Runner.runFeature("classpath:conduitApp/helpers/CreateToken.feature", account,
+                    true);
+            String token = (String) result.get("authToken");
+            tokens.add(token);
+            System.out.println("Token generated: " + (token != null ? token.substring(0, 20) + "..." : "NULL"));
+        }
+        System.out.println("=== Total tokens generated: " + tokens.size() + " ===");
+    }
+}
