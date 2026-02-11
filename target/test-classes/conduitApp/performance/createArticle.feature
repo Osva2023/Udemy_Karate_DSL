@@ -30,6 +30,7 @@ Feature: Testing Articles
         * def randomTag = DataGenerator.getRandomTag()
         * print '=== FINAL UNIQUE TITLE:', randomTitle, '==='
         
+        Given header karate-name = 'Create New Article'
         Given header Authorization = 'Token ' + token
         Given path 'articles'
         And request 
@@ -48,6 +49,7 @@ Feature: Testing Articles
         * def articleId = response.article.slug
         * print '=== ARTICLE CREATED with ID:', articleId, '==='
 
+        Given header karate-name = 'Get Articles - Verify Created'
         Given header Authorization = 'Token ' + token 
         Given params { limit: 10, offset: 0}
         Given path 'articles'
@@ -63,12 +65,14 @@ Feature: Testing Articles
 
         * pause(5000) 
 
+        Given header karate-name = 'Delete Article'
         Given header Authorization = 'Token ' + token
         Given path 'articles', articleId
         When method delete
         Then status 204
         * print '=== ARTICLE DELETED ==='
 
+        Given header karate-name = 'Get Articles - Verify Deleted'
         Given params { limit: 10, offset: 0}
         Given path 'articles'
         When method Get

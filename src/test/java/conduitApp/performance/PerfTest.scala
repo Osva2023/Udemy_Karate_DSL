@@ -19,7 +19,7 @@ class PerfTest extends Simulation {
       uri("/cats").pauseFor(method("get", 15), method("post", 25)
     ))
 
-    //protocol.nameResolver = (req, ctx) -> req.getHeader("karate-name")
+    protocol.nameResolver = (req, ctx) -> req.getHeader("karate-name")
     protocol.runner.karateEnv("perf")
 
     // CSV feeder - provides title and description for each user
