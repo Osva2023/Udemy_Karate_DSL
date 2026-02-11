@@ -11,14 +11,16 @@ Feature: Testing Articles
     * def pause = karate.get('_gatling.pause', sleep)
 
     Scenario: Create and delete an article
-        # Get feeder data from Gatling (Title and Description from CSV)
-        * def feedTitle = __gatling.Title
-        * def feedDescription = __gatling.Description
+        # Get feeder data from Gatling (only when running under Gatling)
+        * def isGatling = karate.get('__gatling') != null
+        * def feedTitle = isGatling ? __gatling.Title : null
+        * def feedDescription = isGatling ? __gatling.Description : null
         
-        # Use feeder data or fall back to DataGenerator
-        * def randomTitle = feedTitle != null ? feedTitle : DataGenerator.getRandomArticleValues().title
-        * def randomDescription = feedDescription != null ? feedDescription : DataGenerator.getRandomArticleValues().description
-        * def randomBody = DataGenerator.getRandomArticleValues().body
+        # Use feeder data if available, otherwise use DataGenerator
+        * def articleData = feedTitle == null ? DataGenerator.getRandomArticleValues() : null
+        * def randomTitle = feedTitle != null ? feedTitle : articleData.title
+        * def randomDescription = feedDescription != null ? feedDescription : articleData.description
+        * def randomBody = articleData != null ? articleData.body : DataGenerator.getRandomArticleValues().body
         * def randomTag = DataGenerator.getRandomTag()
         
         Given header Authorization = 'Token ' + token
