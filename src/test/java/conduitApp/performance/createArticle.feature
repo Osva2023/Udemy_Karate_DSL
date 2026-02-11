@@ -7,12 +7,18 @@ Feature: Testing Articles
     * def token = tokenResult.authToken
     Given url 'https://conduit-api.bondaracademy.com/api/'
     * def DataGenerator = Java.type('conduitApp.helpers.DataGenerator')
+    * def sleep = function(ms){ java.lang.Thread.sleep(ms) }
+    * def pause = karate.get('_gatling.pause', sleep)
 
     Scenario: Create and delete an article
-        * def articleData = DataGenerator.getRandomArticleValues()
-        * def randomTitle = articleData.title
-        * def randomDescription = articleData.description
-        * def randomBody = articleData.body
+        # Get feeder data from Gatling (Title and Description from CSV)
+        * def feedTitle = __gatling.Title
+        * def feedDescription = __gatling.Description
+        
+        # Use feeder data or fall back to DataGenerator
+        * def randomTitle = feedTitle != null ? feedTitle : DataGenerator.getRandomArticleValues().title
+        * def randomDescription = feedDescription != null ? feedDescription : DataGenerator.getRandomArticleValues().description
+        * def randomBody = DataGenerator.getRandomArticleValues().body
         * def randomTag = DataGenerator.getRandomTag()
         
         Given header Authorization = 'Token ' + token
@@ -42,6 +48,7 @@ Feature: Testing Articles
         And match createdArticle.title == randomTitle
         And match createdArticle.tagList contains randomTag
 
+        * pause(5000) 
 
         Given header Authorization = 'Token ' + token
         Given path 'articles', articleId
