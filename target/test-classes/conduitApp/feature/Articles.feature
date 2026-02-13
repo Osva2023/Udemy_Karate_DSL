@@ -11,6 +11,7 @@ Feature: Testing Articles
     Scenario: Create a new article
         * def articleData = DataGenerator.getRandomArticleValues()
         * def randomTitle  = articleData.title
+        * def uniqueTitle = randomTitle + '-' + java.util.UUID.randomUUID()
         * def randomDescription = articleData.description
         * def randomBody = articleData.body
         * def randomTag = DataGenerator.getRandomTag()
@@ -19,7 +20,7 @@ Feature: Testing Articles
         And request 
         """
         { "article": {
-            "title": "#(randomTitle)",
+            "title": "#(uniqueTitle)",
             "description": "#(randomDescription)",
             "body": "#(randomBody)",
             "tagList": ["#(randomTag)"]
@@ -29,13 +30,14 @@ Feature: Testing Articles
 
         When method Post
         Then status 201 
-        And match response.article.title == randomTitle
+        And match response.article.title == uniqueTitle
         
 
 
     Scenario: Create and delete an article
         * def articleData = DataGenerator.getRandomArticleValues()
         * def randomTitle = articleData.title
+        * def uniqueTitle = randomTitle + '-' + java.util.UUID.randomUUID()
         * def randomDescription = articleData.description
         * def randomBody = articleData.body
         * def randomTag = DataGenerator.getRandomTag()
@@ -46,7 +48,7 @@ Feature: Testing Articles
         """
             {
                 "article": {
-                    "title": "#(randomTitle)",
+                    "title": "#(uniqueTitle)",
                     "description": "#(randomDescription)",
                     "body": "#(randomBody)",
                     "tagList": ["#(randomTag)"]
@@ -64,7 +66,7 @@ Feature: Testing Articles
         Then status 200
         * def createdArticle = response.articles.find(x => x.slug == articleId)
         And match createdArticle != null
-        And match createdArticle.title == randomTitle
+        And match createdArticle.title == uniqueTitle
         And match createdArticle.tagList contains randomTag
 
 
