@@ -7,4 +7,6 @@ Scenario: Generate auth token
   When method Post
   Then status 200
   * def authToken = response.user.token
+  * def username = response.user.username
   * print 'INSIDE HELPER - TOKEN IS >>>', authToken
+  * print 'INSIDE HELPER - USERNAME IS >>>', username
