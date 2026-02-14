@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="conduitApp.ExamplesTest" time="5.106" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="conduitApp.ExamplesTest" time="5.345" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/gloriagomez/myproject/target/surefire/surefirebooter-20260213173151043_3.jar /Users/gloriagomez/myproject/target/surefire 2026-02-13T17-31-50_947-jvmRun1 surefire-20260213173151043_1tmp surefire_0-20260213173151043_2tmp"/>
+    <property name="sun.java.command" value="/Users/gloriagomez/myproject/target/surefire/surefirebooter-20260213224957972_3.jar /Users/gloriagomez/myproject/target/surefire 2026-02-13T22-49-57_901-jvmRun1 surefire-20260213224957972_1tmp surefire_0-20260213224957972_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/gloriagomez/myproject/target/test-classes:/Users/gloriagomez/myproject/target/classes:/Users/gloriagomez/.m2/repository/io/karatelabs/karate-junit5/1.5.0/karate-junit5-1.5.0.jar:/Users/gloriagomez/.m2/repository/io/karatelabs/karate-core/1.5.0/karate-core-1.5.0.jar:/Users/gloriagomez/.m2/repository/org/graalvm/js/js-scriptengine/24.0.0/js-scriptengine-24.0.0.jar:/Users/gloriagomez/.m2/repository/org/graalvm/polyglot/polyglot/24.0.0/polyglot-24.0.0.jar:/Users/gloriagomez/.m2/repository/org/graalvm/sdk/collections/24.0.0/collections-24.0.0.jar:/Users/gloriagomez/.m2/repository/org/graalvm/sdk/nativeimage/24.0.0/nativeimage-24.0.0.jar:/Users/gloriagomez/.m2/repository/org/graalvm/sdk/word/24.0.0/word-24.0.0.jar:/Users/gloriagomez/.m2/repository/org/graalvm/js/js-language/24.0.0/js-language-24.0.0.jar:/Users/gloriagomez/.m2/repository/org/graalvm/regex/regex/24.0.0/regex-24.0.0.jar:/Users/gloriagomez/.m2/repository/org/graalvm/truffle/truffle-api/24.0.0/truffle-api-24.0.0.jar:/Users/gloriagomez/.m2/repository/org/graalvm/shadowed/icu4j/24.0.0/icu4j-24.0.0.jar:/Users/gloriagomez/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/Users/gloriagomez/.m2/repository/ognl/ognl/3.3.4/ognl-3.3.4.jar:/Users/gloriagomez/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/Users/gloriagomez/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/Users/gloriagomez/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/gloriagomez/.m2/repository/com/linecorp/armeria/armeria/1.29.2/armeria-1.29.2.jar:/Users/gloriagomez/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/gloriagomez/.m2/repository/io/micrometer/micrometer-core/1.13.0/micrometer-core-1.13.0.jar:/Users/gloriagomez/.m2/repository/io/micrometer/micrometer-commons/1.13.0/micrometer-commons-1.13.0.jar:/Users/gloriagomez/.m2/repository/io/micrometer/micrometer-observation/1.13.0/micrometer-observation-1.13.0.jar:/Users/gloriagomez/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.1/HdrHistogram-2.2.1.jar:/Users/gloriagomez/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport/4.1.110.Final/netty-transport-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-common/4.1.110.Final/netty-common-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-buffer/4.1.110.Final/netty-buffer-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-resolver/4.1.110.Final/netty-resolver-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-codec-haproxy/4.1.110.Final/netty-codec-haproxy-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-codec/4.1.110.Final/netty-codec-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-codec-http2/4.1.110.Final/netty-codec-http2-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-handler/4.1.110.Final/netty-handler-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-codec-http/4.1.110.Final/netty-codec-http-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-resolver-dns/4.1.110.Final/netty-resolver-dns-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-codec-dns/4.1.110.Final/netty-codec-dns-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar:/Users/gloriagomez/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-handler-proxy/4.1.110.Final/netty-handler-proxy-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-codec-socks/4.1.110.Final/netty-codec-socks-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.110.Final/netty-transport-classes-epoll-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.110.Final/netty-transport-classes-kqueue-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.110.Final/netty-resolver-dns-classes-macos-4.1.110.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-tcnative-classes/2.0.65.Final/netty-tcnative-classes-2.0.65.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar:/Users/gloriagomez/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.16.0/brotli4j-1.16.0.jar:/Users/gloriagomez/.m2/repository/com/aayushatharva/brotli4j/service/1.16.0/service-1.16.0.jar:/Users/gloriagomez/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.16.0/native-osx-x86_64-1.16.0.jar:/Users/gloriagomez/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/gloriagomez/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/gloriagomez/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/Users/gloriagomez/.m2/repository/ch/qos/logback/logback-classic/1.5.4/logback-classic-1.5.4.jar:/Users/gloriagomez/.m2/repository/ch/qos/logback/logback-core/1.5.4/logback-core-1.5.4.jar:/Users/gloriagomez/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.12/jcl-over-slf4j-2.0.12.jar:/Users/gloriagomez/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/gloriagomez/.m2/repository/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar:/Users/gloriagomez/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/gloriagomez/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/gloriagomez/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/gloriagomez/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/gloriagomez/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/gloriagomez/.m2/repository/de/siegmar/fastcsv/3.1.0/fastcsv-3.1.0.jar:/Users/gloriagomez/.m2/repository/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/Users/gloriagomez/.m2/repository/io/github/classgraph/classgraph/4.8.170/classgraph-4.8.170.jar:/Users/gloriagomez/.m2/repository/io/github/t12y/resemble/1.1.0/resemble-1.1.0.jar:/Users/gloriagomez/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/gloriagomez/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/gloriagomez/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/gloriagomez/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/gloriagomez/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/gloriagomez/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/gloriagomez/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/gloriagomez/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/gloriagomez/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/gloriagomez/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/gloriagomez/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/gloriagomez/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/gloriagomez/.m2/repository/net/masterthought/cucumber-reporting/5.7.0/cucumber-reporting-5.7.0.jar:/Users/gloriagomez/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/gloriagomez/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/gloriagomez/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:/Users/gloriagomez/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.0/jackson-datatype-jsr310-2.13.0.jar:/Users/gloriagomez/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/Users/gloriagomez/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/gloriagomez/.m2/repository/joda-time/joda-time/2.10.10/joda-time-2.10.10.jar:/Users/gloriagomez/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/gloriagomez/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/gloriagomez/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/gloriagomez/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/Users/gloriagomez/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/gloriagomez/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/gloriagomez/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/gloriagomez/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/Users/gloriagomez/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/Users/gloriagomez/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/gloriagomez/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/Users/gloriagomez/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/gloriagomez/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/gloriagomez/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/gloriagomez/.m2/repository/io/karatelabs/karate-gatling/1.5.0/karate-gatling-1.5.0.jar:/Users/gloriagomez/.m2/repository/io/gatling/highcharts/gatling-charts-highcharts/3.9.5/gatling-charts-highcharts-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-app/3.9.5/gatling-app-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-core/3.9.5/gatling-core-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-netty-util/3.9.5/gatling-netty-util-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-jdk-util/3.9.5/gatling-jdk-util-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/netty/incubator/netty-incubator-transport-native-io_uring/0.0.21.Final/netty-incubator-transport-native-io_uring-0.0.21.Final-linux-x86_64.jar:/Users/gloriagomez/.m2/repository/io/netty/incubator/netty-incubator-transport-classes-io_uring/0.0.21.Final/netty-incubator-transport-classes-io_uring-0.0.21.Final.jar:/Users/gloriagomez/.m2/repository/io/netty/incubator/netty-incubator-transport-native-io_uring/0.0.21.Final/netty-incubator-transport-native-io_uring-0.0.21.Final-linux-aarch_64.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-commons/3.9.5/gatling-commons-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-commons-shared/3.9.5/gatling-commons-shared-3.9.5.jar:/Users/gloriagomez/.m2/repository/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10.jar:/Users/gloriagomez/.m2/repository/io/suzaku/boopickle_2.13/1.3.3/boopickle_2.13-1.3.3.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-commons-shared-unstable/3.9.5/gatling-commons-shared-unstable-3.9.5.jar:/Users/gloriagomez/.m2/repository/org/typelevel/spire-macros_2.13/0.17.0/spire-macros_2.13-0.17.0.jar:/Users/gloriagomez/.m2/repository/com/typesafe/scala-logging/scala-logging_2.13/3.9.5/scala-logging_2.13-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-jsonpath/3.9.5/gatling-jsonpath-3.9.5.jar:/Users/gloriagomez/.m2/repository/com/typesafe/akka/akka-slf4j_2.13/2.6.20/akka-slf4j_2.13-2.6.20.jar:/Users/gloriagomez/.m2/repository/org/simpleflatmapper/lightning-csv/8.2.3/lightning-csv-8.2.3.jar:/Users/gloriagomez/.m2/repository/org/simpleflatmapper/sfm-util/8.2.3/sfm-util-8.2.3.jar:/Users/gloriagomez/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.3/caffeine-2.9.3.jar:/Users/gloriagomez/.m2/repository/io/pebbletemplates/pebble/3.2.1/pebble-3.2.1.jar:/Users/gloriagomez/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.13/2.3.0/scala-parser-combinators_2.13-2.3.0.jar:/Users/gloriagomez/.m2/repository/com/github/scopt/scopt_2.13/3.7.1/scopt_2.13-3.7.1.jar:/Users/gloriagomez/.m2/repository/com/softwaremill/quicklens/quicklens_2.13/1.9.3/quicklens_2.13-1.9.3.jar:/Users/gloriagomez/.m2/repository/net/sf/saxon/Saxon-HE/10.6/Saxon-HE-10.6.jar:/Users/gloriagomez/.m2/repository/org/jodd/jodd-lagarto/6.0.6/jodd-lagarto-6.0.6.jar:/Users/gloriagomez/.m2/repository/org/jodd/jodd-util/6.1.0/jodd-util-6.1.0.jar:/Users/gloriagomez/.m2/repository/io/burt/jmespath-jackson/0.5.1/jmespath-jackson-0.5.1.jar:/Users/gloriagomez/.m2/repository/io/burt/jmespath-core/0.5.1/jmespath-core-0.5.1.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-core-java/3.9.5/gatling-core-java-3.9.5.jar:/Users/gloriagomez/.m2/repository/net/jodah/typetools/0.6.3/typetools-0.6.3.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-http/3.9.5/gatling-http-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-http-client/3.9.5/gatling-http-client-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final.jar:/Users/gloriagomez/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.11.0/native-linux-x86_64-1.11.0.jar:/Users/gloriagomez/.m2/repository/com/aayushatharva/brotli4j/native-linux-aarch64/1.11.0/native-linux-aarch64-1.11.0.jar:/Users/gloriagomez/.m2/repository/com/aayushatharva/brotli4j/native-osx-aarch64/1.11.0/native-osx-aarch64-1.11.0.jar:/Users/gloriagomez/.m2/repository/com/aayushatharva/brotli4j/native-windows-x86_64/1.11.0/native-windows-x86_64-1.11.0.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-http-java/3.9.5/gatling-http-java-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-jms/3.9.5/gatling-jms-3.9.5.jar:/Users/gloriagomez/.m2/repository/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar:/Users/gloriagomez/.m2/repository/com/eatthepath/fast-uuid/0.2.0/fast-uuid-0.2.0.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-jms-java/3.9.5/gatling-jms-java-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-mqtt/3.9.5/gatling-mqtt-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/netty/netty-codec-mqtt/4.1.92.Final/netty-codec-mqtt-4.1.92.Final.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-mqtt-java/3.9.5/gatling-mqtt-java-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-jdbc/3.9.5/gatling-jdbc-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-jdbc-java/3.9.5/gatling-jdbc-java-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-redis/3.9.5/gatling-redis-3.9.5.jar:/Users/gloriagomez/.m2/repository/net/debasishg/redisclient_2.13/3.42/redisclient_2.13-3.42.jar:/Users/gloriagomez/.m2/repository/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-redis-java/3.9.5/gatling-redis-java-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-graphite/3.9.5/gatling-graphite-3.9.5.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-charts/3.9.5/gatling-charts-3.9.5.jar:/Users/gloriagomez/.m2/repository/com/tdunning/t-digest/3.1/t-digest-3.1.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-recorder/3.9.5/gatling-recorder-3.9.5.jar:/Users/gloriagomez/.m2/repository/org/scala-lang/modules/scala-swing_2.13/3.0.0/scala-swing_2.13-3.0.0.jar:/Users/gloriagomez/.m2/repository/io/gatling/gatling-recorder-bc-shaded/1.73/gatling-recorder-bc-shaded-1.73.jar:/Users/gloriagomez/.m2/repository/com/typesafe/akka/akka-actor_2.13/2.6.20/akka-actor_2.13-2.6.20.jar:/Users/gloriagomez/.m2/repository/com/typesafe/config/1.4.2/config-1.4.2.jar:/Users/gloriagomez/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.13/1.0.0/scala-java8-compat_2.13-1.0.0.jar:/Users/gloriagomez/.m2/repository/org/scala-lang/scala-library/2.13.13/scala-library-2.13.13.jar:"/>
@@ -31,7 +31,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="karate.options" value="--tags @homework"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/gloriagomez/myproject/target/surefire/surefirebooter-20260213173151043_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/gloriagomez/myproject/target/surefire/surefirebooter-20260213224957972_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="25.0.2"/>
@@ -61,14 +61,14 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testParallel" classname="conduitApp.ExamplesTest" time="5.086">
-    <system-out><![CDATA[17:31:51.822 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
-17:31:52.521 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-17:31:52.524 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771021912522
-17:31:52.529 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
-17:31:53.515 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-17:31:53.565 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
-17:31:53.803 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+  <testcase name="testParallel" classname="conduitApp.ExamplesTest" time="5.324">
+    <system-out><![CDATA[22:49:58.770 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+22:49:59.502 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:49:59.506 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771040999504
+22:49:59.511 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+22:50:00.457 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:50:00.509 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:50:00.739 [pool-2-thread-1] DEBUG com.intuit.karate - request:
 1 > POST https://conduit-api.bondaracademy.com/api/users/login
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 65
@@ -78,324 +78,161 @@
 1 > Accept-Encoding: gzip,deflate
 {"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
 
-17:31:54.348 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 543
+22:50:01.222 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 479
 1 < 200
 1 < x-powered-by: Express
 1 < vary: Origin
 1 < content-type: application/json; charset=utf-8
-1 < etag: W/"136-TGydHwUtYC96UdUoPcxNeZ78nUE"
-1 < x-cloud-trace-context: d5ce3b717cc19daa8c123ca038ce1b48;o=1
-1 < date: Fri, 13 Feb 2026 22:31:54 GMT
+1 < etag: W/"136-EW2uc6MNQyTpSwLPCLHwN63L4hs"
+1 < x-cloud-trace-context: 5555f993523f9a650a8e02326127c86b;o=1
+1 < date: Sat, 14 Feb 2026 03:50:01 GMT
 1 < server: Google Frontend
 1 < Content-Length: 310
-{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyMTkxNCwiZXhwIjoxNzc2MjA1OTE0fQ.bZyIgwo34-Js66JaKFLeLzcVMAvPBTehkC0G6aICrkg"}}
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4"}}
 
-17:31:54.360 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyMTkxNCwiZXhwIjoxNzc2MjA1OTE0fQ.bZyIgwo34-Js66JaKFLeLzcVMAvPBTehkC0G6aICrkg 
-17:31:54.361 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
-17:31:54.362 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
-17:31:54.367 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
-17:31:54.376 [pool-2-thread-1] DEBUG com.intuit.karate - request:
-1 > GET https://conduit-api.bondaracademy.com/api/articles
-1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyMTkxNCwiZXhwIjoxNzc2MjA1OTE0fQ.bZyIgwo34-Js66JaKFLeLzcVMAvPBTehkC0G6aICrkg
+22:50:01.234 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4 
+22:50:01.235 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+22:50:01.236 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:50:01.241 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+22:50:01.327 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
 1 > Host: conduit-api.bondaracademy.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
 1 > Accept-Encoding: gzip,deflate
 
 
-17:31:54.565 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 188
+22:50:01.518 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 189
 1 < 200
 1 < x-powered-by: Express
 1 < vary: Origin
 1 < content-type: application/json; charset=utf-8
-1 < etag: W/"f9a-TwG/4+lezC4L4HzP7CqKTfl69W0"
-1 < x-cloud-trace-context: a4d5e1d2dc4de705868d59a5eaeea456
-1 < date: Fri, 13 Feb 2026 22:31:54 GMT
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: 9aeedc78ca376e34c37a7b8377c3dcbb
+1 < date: Sat, 14 Feb 2026 03:50:01 GMT
 1 < server: Google Frontend
-1 < Content-Length: 3994
-{"articles":[{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":7,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lady-of-the-Leaves-45546","title":"Lady of the Leaves","description":"Mantarys","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":["Start for Free"],"createdAt":"2026-02-11T15:39:47.461Z","updatedAt":"2026-02-11T15:39:47.461Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Roger-Hogg-45546","title":"Roger Hogg","description":"Pentos","body":"There are no heroes...in life, the monsters win.","tagList":["Test"],"createdAt":"2026-02-10T22:52:04.893Z","updatedAt":"2026-02-10T22:52:04.893Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":45}
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
 
-17:31:54.571 [pool-2-thread-1] INFO  com.intuit.karate - === GET PERSONAL FEED ARTICLES response received === 
-17:31:54.572 [pool-2-thread-1] INFO  com.intuit.karate - === RESPONSE BODY: {
-  "articles": [
-    {
-      "slug": "Morya-Frey-45546",
-      "title": "Morya Frey",
-      "description": "Samyrian",
-      "body": "Do the dead frighten you?",
-      "tagList": [
-        "YouTube"
-      ],
-      "createdAt": "2026-02-11T21:07:07.253Z",
-      "updatedAt": "2026-02-11T21:07:07.253Z",
-      "favorited": true,
-      "favoritesCount": 7,
-      "author": {
-        "username": "Osva",
-        "bio": null,
-        "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
-        "following": false
-      }
-    },
-    {
-      "slug": "Harbert-Paege-45546",
-      "title": "Harbert Paege",
-      "description": "Tolos",
-      "body": "A lion doesn't concern itself with the opinion of sheep.",
-      "tagList": [
-        "Git"
-      ],
-      "createdAt": "2026-02-11T20:51:34.764Z",
-      "updatedAt": "2026-02-11T20:51:34.764Z",
-      "favorited": true,
-      "favoritesCount": 1,
-      "author": {
-        "username": "Osva",
-        "bio": null,
-        "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
-        "following": false
-      }
-    },
-    {
-      "slug": "Tristimun-45546",
-      "title": "Tristimun",
-      "description": "White Harbor",
-      "body": "The things I do for love.",
-      "tagList": [
-        "GitHub"
-      ],
-      "createdAt": "2026-02-11T20:35:34.834Z",
-      "updatedAt": "2026-02-11T20:35:34.834Z",
-      "favorited": true,
-      "favoritesCount": 1,
-      "author": {
-        "username": "Osva",
-        "bio": null,
-        "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
-        "following": false
-      }
-    },
-    {
-      "slug": "Mother-Mole-45546",
-      "title": "Mother Mole",
-      "description": "Sunspear",
-      "body": "Winter is coming.",
-      "tagList": [
-        "Blog"
-      ],
-      "createdAt": "2026-02-11T20:33:18.422Z",
-      "updatedAt": "2026-02-11T20:33:18.422Z",
-      "favorited": false,
-      "favoritesCount": 0,
-      "author": {
-        "username": "Osva",
-        "bio": null,
-        "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
-        "following": false
-      }
-    },
-    {
-      "slug": "High-Sparrow-45546",
-      "title": "High Sparrow",
-      "description": "Braavos",
-      "body": "And I have a tender spot in my heart for cripples and bastards and broken things.",
-      "tagList": [
-        "Slack"
-      ],
-      "createdAt": "2026-02-11T20:31:33.248Z",
-      "updatedAt": "2026-02-11T20:31:33.248Z",
-      "favorited": false,
-      "favoritesCount": 0,
-      "author": {
-        "username": "Osva",
-        "bio": null,
-        "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
-        "following": false
-      }
-    },
-    {
-      "slug": "Anguy-45546",
-      "title": "Anguy",
-      "description": "New Ghis",
-      "body": "Every flight begins with a fall.",
-      "tagList": [
-        "Blog"
-      ],
-      "createdAt": "2026-02-11T17:59:58.529Z",
-      "updatedAt": "2026-02-11T17:59:58.529Z",
-      "favorited": false,
-      "favoritesCount": 0,
-      "author": {
-        "username": "Osva",
-        "bio": null,
-        "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
-        "following": false
-      }
-    },
-    {
-      "slug": "Kedry-45546",
-      "title": "Kedry",
-      "description": "Pentos",
-      "body": "Once you\u2019ve accepted your flaws, no one can use them against you.",
-      "tagList": [
-        "Git"
-      ],
-      "createdAt": "2026-02-11T17:54:53.795Z",
-      "updatedAt": "2026-02-11T17:54:53.795Z",
-      "favorited": false,
-      "favoritesCount": 0,
-      "author": {
-        "username": "Osva",
-        "bio": null,
-        "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
-        "following": false
-      }
-    },
-    {
-      "slug": "Yormwell-45546",
-      "title": "Yormwell",
-      "description": "Old Valyria",
-      "body": "The North remembers.",
-      "tagList": [
-        "Value-Focused"
-      ],
-      "createdAt": "2026-02-11T16:14:56.387Z",
-      "updatedAt": "2026-02-11T16:14:56.387Z",
-      "favorited": false,
-      "favoritesCount": 0,
-      "author": {
-        "username": "Osva",
-        "bio": null,
-        "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
-        "following": false
-      }
-    },
-    {
-      "slug": "Lady-of-the-Leaves-45546",
-      "title": "Lady of the Leaves",
-      "description": "Mantarys",
-      "body": "... a mind needs books as a sword needs a whetstone, if it is to keep its edge.",
-      "tagList": [
-        "Start for Free"
-      ],
-      "createdAt": "2026-02-11T15:39:47.461Z",
-      "updatedAt": "2026-02-11T15:39:47.461Z",
-      "favorited": false,
-      "favoritesCount": 0,
-      "author": {
-        "username": "Osva",
-        "bio": null,
-        "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
-        "following": false
-      }
-    },
-    {
-      "slug": "Roger-Hogg-45546",
-      "title": "Roger Hogg",
-      "description": "Pentos",
-      "body": "There are no heroes...in life, the monsters win.",
-      "tagList": [
-        "Test"
-      ],
-      "createdAt": "2026-02-10T22:52:04.893Z",
-      "updatedAt": "2026-02-10T22:52:04.893Z",
-      "favorited": false,
-      "favoritesCount": 0,
-      "author": {
-        "username": "Osva",
-        "bio": null,
-        "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
-        "following": false
-      }
-    }
-  ],
-  "articlesCount": 45
-}
- === 
-17:31:54.579 [pool-2-thread-1] INFO  com.intuit.karate - === Favorites count for the first article: 7 === 
-17:31:54.583 [pool-2-thread-1] INFO  com.intuit.karate - === Article slug for the first article: Morya-Frey-45546 === 
-17:31:54.592 [pool-2-thread-1] DEBUG com.intuit.karate - request:
-2 > POST https://conduit-api.bondaracademy.com/api/articles/Morya-Frey-45546/favorite
-2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyMTkxNCwiZXhwIjoxNzc2MjA1OTE0fQ.bZyIgwo34-Js66JaKFLeLzcVMAvPBTehkC0G6aICrkg
-2 > Content-Type: application/json; charset=UTF-8
-2 > Content-Length: 2
+22:50:01.533 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
 2 > Host: conduit-api.bondaracademy.com
 2 > Connection: Keep-Alive
 2 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
 2 > Accept-Encoding: gzip,deflate
-{}
 
-17:31:54.801 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 208
+
+22:50:01.713 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 178
 2 < 200
 2 < x-powered-by: Express
 2 < vary: Origin
 2 < content-type: application/json; charset=utf-8
-2 < etag: W/"18f-3QjX/MZbjAcwZ14bJPXsvMw9dcA"
-2 < x-cloud-trace-context: 0b018d5402b158dc95d15b18c79baf27
-2 < date: Fri, 13 Feb 2026 22:31:54 GMT
+2 < etag: W/"474-UgUG1ybtOJ+lw1gUc1lgcl0Tbqk"
+2 < x-cloud-trace-context: f84e8dd05eca94d8c3b1f181fcefbbe4
+2 < date: Sat, 14 Feb 2026 03:50:01 GMT
 2 < server: Google Frontend
-2 < Content-Length: 399
-{"article":{"id":346362,"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favoritesCount":8,"tagList":["YouTube"],"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false},"favorited":true}}
+2 < Content-Length: 1140
+{"comments":[{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100516,"createdAt":"2026-02-14T03:29:34.079Z","updatedAt":"2026-02-14T03:29:34.079Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100517,"createdAt":"2026-02-14T03:33:20.268Z","updatedAt":"2026-02-14T03:33:20.268Z","body":"randomCommentBody","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
 
-17:31:54.806 [pool-2-thread-1] INFO  com.intuit.karate - === Current favorites count after POST request: 8 === 
-17:31:54.820 [pool-2-thread-1] INFO  com.intuit.karate - === Verification: Favorites count incremented from 7 to 8 === 
-17:31:54.825 [pool-2-thread-1] DEBUG com.intuit.karate - request:
-3 > GET https://conduit-api.bondaracademy.com/api/articles?favorited=Osva&limit=10&offset=0
-3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyMTkxNCwiZXhwIjoxNzc2MjA1OTE0fQ.bZyIgwo34-Js66JaKFLeLzcVMAvPBTehkC0G6aICrkg
+22:50:01.732 [pool-2-thread-1] INFO  com.intuit.karate - === Initial comments count: 4 === 
+22:50:01.735 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+3 > POST https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 83
 3 > Host: conduit-api.bondaracademy.com
 3 > Connection: Keep-Alive
 3 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
 3 > Accept-Encoding: gzip,deflate
+{"comment":{"body":"Veritatis optio reprehenderit iste excepturi consequatur et."}}
 
-
-17:31:55.049 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 223
+22:50:01.931 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 195
 3 < 200
 3 < x-powered-by: Express
 3 < vary: Origin
 3 < content-type: application/json; charset=utf-8
-3 < etag: W/"4a7-CtjqHN1yyGeZXM7wK2JJ10Q9eto"
-3 < x-cloud-trace-context: dd2d0d4c85dcb003f07661247c5a3885
-3 < date: Fri, 13 Feb 2026 22:31:55 GMT
+3 < etag: W/"130-FMnQ1PNTHbXZ6dYNe59+o90FoIA"
+3 < x-cloud-trace-context: a07c4902ebc89d4c5b0bdc1d94965d17
+3 < date: Sat, 14 Feb 2026 03:50:02 GMT
 3 < server: Google Frontend
-3 < Content-Length: 1191
-{"articles":[{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":8,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":3}
+3 < Content-Length: 304
+{"comment":{"id":100518,"createdAt":"2026-02-14T03:50:02.023Z","updatedAt":"2026-02-14T03:50:02.023Z","body":"Veritatis optio reprehenderit iste excepturi consequatur et.","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
 
-17:31:55.051 [pool-2-thread-1] INFO  com.intuit.karate - === GET FAVORITED ARTICLES response received === 
-17:31:55.052 [pool-2-thread-1] INFO  com.intuit.karate - === Number of favorited articles: 3 === 
-17:31:55.052 [pool-2-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'articleSchema' with new value: {
-    "slug": #string,
-    "title": #string,
-    "description": #string,
-    "body": #string,
-    "tagList": #array,
-    "createdAt": #string,
-    "updatedAt": #string,
-    "favorited": #boolean,
-    "favoritesCount": #number,
-    "author": {
-        "username": #string,
-        "bio": ##string,
-        "image": #string,
-        "following": #boolean
-    }
-}
-17:31:55.076 [pool-2-thread-1] INFO  com.intuit.karate - === Favorite article slugs: [
-  "Morya-Frey-45546",
-  "Harbert-Paege-45546",
-  "Tristimun-45546"
-]
- === 
-17:31:55.078 [pool-2-thread-1] INFO  com.intuit.karate - === SUCCESS: Article with slug Morya-Frey-45546 found in favorite articles === 
+22:50:01.937 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+4 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
+4 > Host: conduit-api.bondaracademy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+4 > Accept-Encoding: gzip,deflate
+
+
+22:50:02.097 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 159
+4 < 200
+4 < x-powered-by: Express
+4 < vary: Origin
+4 < content-type: application/json; charset=utf-8
+4 < etag: W/"599-zglnXG+FHzN66ED/zc8449xKHJY"
+4 < x-cloud-trace-context: 5b3c91548213622ed3b25e25c3398e24
+4 < date: Sat, 14 Feb 2026 03:50:02 GMT
+4 < server: Google Frontend
+4 < Content-Length: 1433
+{"comments":[{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100516,"createdAt":"2026-02-14T03:29:34.079Z","updatedAt":"2026-02-14T03:29:34.079Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100517,"createdAt":"2026-02-14T03:33:20.268Z","updatedAt":"2026-02-14T03:33:20.268Z","body":"randomCommentBody","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100518,"createdAt":"2026-02-14T03:50:02.023Z","updatedAt":"2026-02-14T03:50:02.023Z","body":"Veritatis optio reprehenderit iste excepturi consequatur et.","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:50:02.106 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+5 > DELETE https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments/100514
+5 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
+5 > Host: conduit-api.bondaracademy.com
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+5 > Accept-Encoding: gzip,deflate
+
+
+22:50:02.292 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 186
+5 < 200
+5 < x-powered-by: Express
+5 < vary: Origin
+5 < content-type: application/json; charset=utf-8
+5 < etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+5 < x-cloud-trace-context: 29c9e3d02556b0dd76043ba48166a85f
+5 < date: Sat, 14 Feb 2026 03:50:02 GMT
+5 < server: Google Frontend
+5 < Content-Length: 2
+{}
+
+22:50:02.296 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+6 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+6 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
+6 > Host: conduit-api.bondaracademy.com
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+6 > Accept-Encoding: gzip,deflate
+
+
+22:50:02.480 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 182
+6 < 200
+6 < x-powered-by: Express
+6 < vary: Origin
+6 < content-type: application/json; charset=utf-8
+6 < etag: W/"475-mo+hDErmypINXWQJAsrs5L0dAbE"
+6 < x-cloud-trace-context: c201c5d8f5480ee312320a2043cdc567
+6 < date: Sat, 14 Feb 2026 03:50:02 GMT
+6 < server: Google Frontend
+6 < Content-Length: 1141
+{"comments":[{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100516,"createdAt":"2026-02-14T03:29:34.079Z","updatedAt":"2026-02-14T03:29:34.079Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100517,"createdAt":"2026-02-14T03:33:20.268Z","updatedAt":"2026-02-14T03:33:20.268Z","body":"randomCommentBody","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100518,"createdAt":"2026-02-14T03:50:02.023Z","updatedAt":"2026-02-14T03:50:02.023Z","body":"Veritatis optio reprehenderit iste excepturi consequatur et.","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
 ---------------------------------------------------------
 feature: classpath:conduitApp/feature/HomeWork.feature
-scenarios:  1 | passed:  1 | failed:  0 | time: 1.5172
+scenarios:  1 | passed:  1 | failed:  0 | time: 1.9773
 ---------------------------------------------------------
 
-17:31:55.728 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+22:50:03.191 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
 Karate version: 1.5.0
 ======================================================
-elapsed:   3.91 | threads:    5 | thread time: 1.52 
-features:     1 | skipped:    4 | efficiency: 0.08
+elapsed:   4.43 | threads:    5 | thread time: 1.98 
+features:     1 | skipped:    4 | efficiency: 0.09
 scenarios:    1 | passed:     1 | failed: 0
 ======================================================
 
@@ -404,7 +241,7 @@ file:///Users/gloriagomez/myproject/target/karate-reports/karate-summary.html
 ===================================================================
 
 ]]></system-out>
-    <system-err><![CDATA[Feb 13, 2026 5:31:56 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+    <system-err><![CDATA[Feb 13, 2026 10:50:03 PM net.masterthought.cucumber.ReportParser parseJsonFiles
 INFO: File '/Users/gloriagomez/myproject/target/karate-reports/conduitApp.feature.HomeWork.json' contains 1 features
 ]]></system-err>
   </testcase>

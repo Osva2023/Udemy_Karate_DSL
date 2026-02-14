@@ -50,4 +50,9 @@ public class DataGenerator {
         return tags.get(random.nextInt(tags.size()));
     }
 
+    public static String getRandomComment() {
+        Faker faker = new Faker();
+        return faker.lorem().sentence();
+    }
+
 }

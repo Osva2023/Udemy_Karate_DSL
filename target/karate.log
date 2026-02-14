@@ -6408,3 +6408,1260 @@ classpath:conduitApp/feature/HomeWork.feature:96
  === 
 17:31:55.078 [pool-2-thread-1] INFO  com.intuit.karate - === SUCCESS: Article with slug Morya-Frey-45546 found in favorite articles === 
 17:31:55.728 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+18:06:51.132 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+18:06:51.900 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:06:51.902 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771024011900
+18:06:51.908 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+18:06:52.880 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:06:52.933 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+18:06:53.158 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+18:06:53.688 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 527
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-P/WtMwJpaYYC3FW1uuNRLSzq8oM"
+1 < x-cloud-trace-context: 4aefb6b283428313c670f6f7a68cd3d1;o=1
+1 < date: Fri, 13 Feb 2026 23:06:53 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDAxMywiZXhwIjoxNzc2MjA4MDEzfQ.Gzh7W1KDR_nhsf65CYcPzzK-djjht4LcqieNox55L7M"}}
+
+18:06:53.699 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDAxMywiZXhwIjoxNzc2MjA4MDEzfQ.Gzh7W1KDR_nhsf65CYcPzzK-djjht4LcqieNox55L7M 
+18:06:53.700 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+18:06:53.701 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+18:06:53.705 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+18:06:53.708 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:06:54.412 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 702
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"43a9-LcE09Sq5hUXerH/4SvpnaCSztSY"
+1 < x-cloud-trace-context: 9cb2db10449147f9129f3dd7387738f2
+1 < date: Fri, 13 Feb 2026 23:06:54 GMT
+1 < server: Google Frontend
+1 < Content-Length: 17321
+{"articles":[{"slug":"Discover-Bondar-Academy:-Your-Gateway-to-Efficient-Learning-1","title":"Discover Bondar Academy: Your Gateway to Efficient Learning","description":"Discover Bondar Academy's unique place in the educational landscape, where value-focused and efficient learning approaches converge. Our goal is to rapidly enhance your professional technical skills, boosting your market competitiveness and paving the way for higher-paying job opportunities. The speed of your progress is in your hands – you set the pace, and we provide the solutions and support to help you achieve your desired outcomes.","body":"Bondar Academy is a leading platform for efficient education, designed to boost your technical skills and advance your career in Quality Assurance (QA). Our program features a balanced mix of pre-recorded lectures and live sessions, allowing each student to study at their own pace and at a time that suits them. \n\nOur instructors are readily available on our Slack Workspace for support. Whether it's a quick question or a more complex issue requiring a Zoom call or Slack Huddle for screen sharing and live discussion, we're here to assist. Additionally, each class comes with a comprehensive question bank for self-assessment. Following each lecture, you have the opportunity to validate your understanding and readiness to progress to the next topic. You set the pace, and we provide the solutions to ensure you achieve your desired outcomes.\n\nSignUp today: https://www.bondaracademy.com","tagList":["qa career","Bondar Academy","QA Skills","Value-Focused"],"createdAt":"2024-01-27T21:52:32.682Z","updatedAt":"2024-01-27T21:52:32.682Z","favorited":false,"favoritesCount":1717,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"The-value-of-pre-recorded-video-classes.-The-most-efficient-approach-to-tranfer-the-knowledge-1","title":"The value of pre-recorded video classes. The most efficient approach to tranfer the knowledge","description":"As educational practices evolve, video tutorials have emerged as the most efficient method for imparting theoretical knowledge. At Bondar Academy, we prioritize expertly structured and crafted video tutorials, ensuring you learn quickly and effectively and advance your skills.","body":"At Bondar Academy, we prioritize the value of your time and the efficiency of your education, distinguishing our approach from traditional colleges and live boot camps. Forget long, tedious live lectures on a fixed schedule. With us, you learn at your convenience and pace through optimized, structured video lectures. \n\nWe understand your goal is rapid knowledge acquisition. Our pre-recorded and well-organized lectures are designed precisely for this, ensuring no slowdowns from group dynamics or unrelated instructor anecdotes. \n\nDive straight into the subject matter, learn efficiently, and if questions arise, our immediate support on the Slack Workspace is there to streamline your learning process and swiftly remove any roadblocks.","tagList":["Bondar Academy","Video Lectures","Tutorials"],"createdAt":"2024-01-27T21:50:38.825Z","updatedAt":"2024-01-27T21:50:38.825Z","favorited":false,"favoritesCount":453,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Mastering-Knowledge-with-Self-Assessments:-Identifying-and-Bridging-Learning-Gaps-in-Education-1","title":"Mastering Knowledge with Self-Assessments: Identifying and Bridging Learning Gaps in Education","description":"Self-assessment is an essential tool for gauging your understanding of lecture material. It answers critical questions: Have you grasped everything correctly? Is there anything you've missed? Are you prepared for the next lesson? These assessments ensure that you build a solid foundation of knowledge, confidently and efficiently paving the way for swift progress and effective learning outcomes.","body":"Traditional educational institutions, such as colleges and universities, commonly use tests and assessments to measure knowledge. This approach is effective for gauging student performance, but it's not without drawbacks. In these settings, assessments after every lecture aren't feasible due to the time required for teachers to evaluate them. This often leads to students having a false sense of understanding, believing they've comprehended all aspects of a lecture when, in reality, small but crucial details might be missed. These 'knowledge gaps' can accumulate, making more complex topics difficult to grasp later on.\n\nAt Bondar Academy, we address this challenge by implementing self-assessments after every lecture. These are designed to cover key questions that ensure a thorough understanding of the material, essential for comfort and success in future lectures. The number of questions varies, ranging from 3-4 to 15-20, depending on the lecture's significance and the volume of critical information. With these self-assessments, students receive immediate feedback, helping them determine if they've fully understood the lecture or if they need to revisit certain parts or seek assistance from our instructors in the Slack Workspace.","tagList":["Self-Assessment","Test","Exam"],"createdAt":"2024-01-27T21:48:36.340Z","updatedAt":"2024-01-27T21:48:36.340Z","favorited":false,"favoritesCount":224,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Practical-Implementation-of-Skills:-Homework-Assignments-with-Instructor-Supervision-1","title":"Practical Implementation of Skills: Homework Assignments with Instructor Supervision","description":"Knowledge or skills not reinforced through practical exercises can quickly fade, often faster than anticipated. Homework, particularly in tasks like writing your own code, is crucial for honing these skills and cementing your understanding. At Bondar Academy, we ensure this vital step by assigning homework, rigorously evaluating the outcomes, and providing valuable feedback to guide your learning journey.","body":"Homework assignments are a fundamental component of the educational methodology at Bondar Academy, especially in technical education where learning a new programming language or framework is involved. The key to mastering these skills lies in writing code; the more you write, the better you become. However, merely replicating code seen in lectures leads to minimal learning. Often, this approach leaves students unclear about why their code works the way it does, as they focus on copying rather than understanding.\n\nA homework assignment at Bondar Academy starts with a blank page, challenging students to apply all their knowledge to write the first line of code. This process is more demanding than it appears. As you write each line, understanding and reasoning grow, making your code meaningful and comprehensible. You learn to write code that makes sense to you, enhancing your understanding.\n\nIn completing these assignments, you engage the 'thinking' part of your brain, transforming theoretical knowledge into practical skills. Recognizing the crucial role of homework in learning, our instructors at Bondar Academy are always available to assist with any challenges. Just reach out on Slack, and you'll receive the guidance and support needed for successful completion. At Bondar Academy, we fully understand the importance of homework assignments for the best outcome, so our instructors are always here to assist if you have any difficulties with completing them. Just ask in Slack and you'll be guided and assisted.","tagList":["Homework","Assignments","Practice","Coding"],"createdAt":"2024-01-27T21:46:09.512Z","updatedAt":"2024-01-27T21:46:09.512Z","favorited":false,"favoritesCount":102,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Embracing-Daily-Git-Routines:-Real-Code-Reviews-on-GitHub-for-Effective-Coding-Practice.-1","title":"Embracing Daily Git Routines: Real Code Reviews on GitHub for Effective Coding Practice.","description":"Learning to code is just one part of a larger skill set; effectively managing and organizing code is equally crucial. At Bondar Academy, we integrate Git and platforms like GitHub into the core learning cycle. With us, using Git becomes a regular routine, where organizing code in branches, storing it in remote repositories, and collaborating with others through strategies like branching, merging, pull requests, and code reviews are standard practice.","body":"At Bondar Academy, mastering Git and GitHub is a fundamental step before delving into frameworks or programming languages. Effective code management, organization, and storage are crucial skills, and Git is the premier tool for this purpose. However, many learners initially find Git challenging due to its complexity and non-intuitive nature. To address this, our instructors have developed structured lectures on Git and GitHub, ensuring an efficient and thorough understanding of these essential tools. Git lessons are a mandatory prerequisite in every class. For a glimpse into our teaching approach, visit our YouTube channel: https://www.youtube.com/@BondarAcademy/playlists.\n\nIn our courses, all homework assignments are reviewed using GitHub pull requests, mirroring the workflow in real-world software development environments. Students submit their code to their working branch for review. Our instructors then provide feedback, suggesting modifications or adjustments for pull request approval. This iterative process is repeated throughout the course, establishing Git usage as a natural and routine part of your coding practice.","tagList":["YouTube","Git","GitHub"],"createdAt":"2024-01-27T21:42:31.491Z","updatedAt":"2024-01-27T21:42:31.491Z","favorited":false,"favoritesCount":103,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Engaging-in-Live-Zoom-Sessions:-Interact-with-Instructors-and-Peers-Ask-Questions-in-Real-Time-1","title":"Engaging in Live Zoom Sessions: Interact with Instructors and Peers, Ask Questions in Real-Time","description":"In our increasingly online world, personal engagement remains a crucial element of effective learning. At Bondar Academy, we address this by hosting live Zoom sessions. These sessions provide a platform for live interaction between instructors and students, and among students themselves. Complementing our Slack channel, these live sessions offer an additional avenue for asking questions and engaging in meaningful discussions.","body":"In our increasingly online world, personal engagement remains a crucial element of effective learning. \nAt Bondar Academy, we address this by hosting live Zoom sessions. These sessions provide a platform for live interaction between instructors and students and among students themselves. Complementing our Slack channel, these live sessions offer an additional avenue for asking questions and engaging in meaningful discussions.","tagList":["Zoom","Live Sessions"],"createdAt":"2024-01-27T21:39:50.587Z","updatedAt":"2024-01-27T21:39:50.587Z","favorited":false,"favoritesCount":75,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Utilizing-Slack-for-Continuous-Engagement:-Connect-with-Instructors-Share-Insights-and-Collaborate-1","title":"Utilizing Slack for Continuous Engagement: Connect with Instructors, Share Insights, and Collaborate","description":"Slack stands out as a widely-used messaging and collaboration platform, celebrated for its convenience and versatility. It enables simultaneous participation in multiple conversations, supports comments and emoji reactions, and allows users to share screenshots, videos, and code snippets. Its functionality extends to making calls in huddle sessions. Given these robust features, Bondar Academy has chosen Slack as our primary communication platform, facilitating seamless interaction and collaboration.","body":"As a new member of Bondar Academy, one of your initial steps should be registering for the Bondar Academy Slack Workspace. Upon registration at Bondar Academy, you'll receive a welcome email containing the URL to join. This Workspace serves as a central hub for communication with instructors and fellow students. Whether you have a question, need to share code, or want to upload screenshots, Slack makes it easy and efficient. Moreover, its compatibility with both desktop and mobile devices, by downloading and installing the app, ensures you can stay connected with your instructors and the community wherever you go.","tagList":["Slack","Community","Collaboration"],"createdAt":"2024-01-27T21:38:27.992Z","updatedAt":"2024-01-27T21:38:27.992Z","favorited":false,"favoritesCount":70,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Stay-Ahead-with-Bondar-Academy:-Subscribe-to-Our-YouTube-channel-for-Latest-Tech-and-Education-Updates-1","title":"Stay Ahead with Bondar Academy: Subscribe to Our YouTube channel for Latest Tech and Education Updates","description":"Who doesn't appreciate high-quality free resources? YouTube serves as an ideal platform for sharing the latest news, updates, and a wealth of tips and tricks in test automation and technology. Keep abreast of these invaluable insights by subscribing to the @bondaracademy YouTube channel.","body":"Who doesn't appreciate high-quality free resources? \n\nYouTube serves as an ideal platform for sharing the latest news, updates, and a wealth of tips and tricks in test automation and technology. \n\nKeep abreast of these invaluable insights by subscribing to our YouTube channel: https://www.youtube.com/@bondaracademy","tagList":["YouTube"],"createdAt":"2024-01-27T21:36:32.360Z","updatedAt":"2024-01-27T21:36:32.360Z","favorited":false,"favoritesCount":66,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Explore-the-Latest-in-Learning:-Bondar-Academy-Blog's-Educational-Insights-from-Our-Experts-1","title":"Explore the Latest in Learning: Bondar Academy Blog's Educational Insights from Our Experts","description":"Discover a treasure trove of knowledge on the Bondar Academy blog. Here, we share an array of tips, techniques, and valuable educational materials, all designed to keep you abreast of the latest technological trends and best practices. For easy access and continual learning, consider bookmarking our blog in your browser.","body":"On the Bondar Academy blog, we consistently provide insightful and pertinent updates on the latest in technology, test automation, and industry best practices. For your convenience, we recommend adding our blog to your browser's bookmarks. Our commitment to keeping you informed is reflected in our weekly posts, each focusing on a significant topic of the week.\n\nWe value your input and invite you to contribute to our ever-evolving content. If you have any suggestions or specific topics you'd like us to explore, please feel free to share your ideas in the Bondar Academy Slack workspace. \n\nDiscover our blog here: https://www.bondaracademy.com/blog\n","tagList":["Blog"],"createdAt":"2024-01-27T21:34:04.531Z","updatedAt":"2024-01-27T21:34:04.531Z","favorited":false,"favoritesCount":67,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Take-the-Next-Step:-Join-Bondar-Academy-Today-and-Enroll-into-the-class-1","title":"Take the Next Step: Join Bondar Academy Today and Enroll into the class","description":"Are you prepared to transform your educational journey? Begin by signing up at Bondar Academy, then register for our Slack Workspace to start exploring. We offer a range of classes, with some being completely free and others featuring free previews of the initial sections. This allows you to experience our content and teaching approach firsthand, helping you make an informed decision before enrolling in a class.","body":"Are you prepared to transform your educational journey? \n\nBegin by signing up at Bondar Academy, then register for our Slack Workspace to start exploring. We offer a range of classes, with some being completely free and others featuring free previews of the initial sections. This allows you to experience our content and teaching approach firsthand, helping you make an informed decision before enrolling in a class.\n\nClick here to enroll: https://www.bondaracademy.com","tagList":["Enroll","Start for Free"],"createdAt":"2024-01-27T21:32:21.056Z","updatedAt":"2024-01-27T21:32:21.056Z","favorited":false,"favoritesCount":71,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}}],"articlesCount":10}
+
+18:06:54.425 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:101
+Then status 304
+status code was: 200, expected: 304, response time in milliseconds: 702, url: https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0, response: 
+{"articles":[{"slug":"Discover-Bondar-Academy:-Your-Gateway-to-Efficient-Learning-1","title":"Discover Bondar Academy: Your Gateway to Efficient Learning","description":"Discover Bondar Academy's unique place in the educational landscape, where value-focused and efficient learning approaches converge. Our goal is to rapidly enhance your professional technical skills, boosting your market competitiveness and paving the way for higher-paying job opportunities. The speed of your progress is in your hands – you set the pace, and we provide the solutions and support to help you achieve your desired outcomes.","body":"Bondar Academy is a leading platform for efficient education, designed to boost your technical skills and advance your career in Quality Assurance (QA). Our program features a balanced mix of pre-recorded lectures and live sessions, allowing each student to study at their own pace and at a time that suits them. \n\nOur instructors are readily available on our Slack Workspace for support. Whether it's a quick question or a more complex issue requiring a Zoom call or Slack Huddle for screen sharing and live discussion, we're here to assist. Additionally, each class comes with a comprehensive question bank for self-assessment. Following each lecture, you have the opportunity to validate your understanding and readiness to progress to the next topic. You set the pace, and we provide the solutions to ensure you achieve your desired outcomes.\n\nSignUp today: https://www.bondaracademy.com","tagList":["qa career","Bondar Academy","QA Skills","Value-Focused"],"createdAt":"2024-01-27T21:52:32.682Z","updatedAt":"2024-01-27T21:52:32.682Z","favorited":false,"favoritesCount":1717,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"The-value-of-pre-recorded-video-classes.-The-most-efficient-approach-to-tranfer-the-knowledge-1","title":"The value of pre-recorded video classes. The most efficient approach to tranfer the knowledge","description":"As educational practices evolve, video tutorials have emerged as the most efficient method for imparting theoretical knowledge. At Bondar Academy, we prioritize expertly structured and crafted video tutorials, ensuring you learn quickly and effectively and advance your skills.","body":"At Bondar Academy, we prioritize the value of your time and the efficiency of your education, distinguishing our approach from traditional colleges and live boot camps. Forget long, tedious live lectures on a fixed schedule. With us, you learn at your convenience and pace through optimized, structured video lectures. \n\nWe understand your goal is rapid knowledge acquisition. Our pre-recorded and well-organized lectures are designed precisely for this, ensuring no slowdowns from group dynamics or unrelated instructor anecdotes. \n\nDive straight into the subject matter, learn efficiently, and if questions arise, our immediate support on the Slack Workspace is there to streamline your learning process and swiftly remove any roadblocks.","tagList":["Bondar Academy","Video Lectures","Tutorials"],"createdAt":"2024-01-27T21:50:38.825Z","updatedAt":"2024-01-27T21:50:38.825Z","favorited":false,"favoritesCount":453,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Mastering-Knowledge-with-Self-Assessments:-Identifying-and-Bridging-Learning-Gaps-in-Education-1","title":"Mastering Knowledge with Self-Assessments: Identifying and Bridging Learning Gaps in Education","description":"Self-assessment is an essential tool for gauging your understanding of lecture material. It answers critical questions: Have you grasped everything correctly? Is there anything you've missed? Are you prepared for the next lesson? These assessments ensure that you build a solid foundation of knowledge, confidently and efficiently paving the way for swift progress and effective learning outcomes.","body":"Traditional educational institutions, such as colleges and universities, commonly use tests and assessments to measure knowledge. This approach is effective for gauging student performance, but it's not without drawbacks. In these settings, assessments after every lecture aren't feasible due to the time required for teachers to evaluate them. This often leads to students having a false sense of understanding, believing they've comprehended all aspects of a lecture when, in reality, small but crucial details might be missed. These 'knowledge gaps' can accumulate, making more complex topics difficult to grasp later on.\n\nAt Bondar Academy, we address this challenge by implementing self-assessments after every lecture. These are designed to cover key questions that ensure a thorough understanding of the material, essential for comfort and success in future lectures. The number of questions varies, ranging from 3-4 to 15-20, depending on the lecture's significance and the volume of critical information. With these self-assessments, students receive immediate feedback, helping them determine if they've fully understood the lecture or if they need to revisit certain parts or seek assistance from our instructors in the Slack Workspace.","tagList":["Self-Assessment","Test","Exam"],"createdAt":"2024-01-27T21:48:36.340Z","updatedAt":"2024-01-27T21:48:36.340Z","favorited":false,"favoritesCount":224,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Practical-Implementation-of-Skills:-Homework-Assignments-with-Instructor-Supervision-1","title":"Practical Implementation of Skills: Homework Assignments with Instructor Supervision","description":"Knowledge or skills not reinforced through practical exercises can quickly fade, often faster than anticipated. Homework, particularly in tasks like writing your own code, is crucial for honing these skills and cementing your understanding. At Bondar Academy, we ensure this vital step by assigning homework, rigorously evaluating the outcomes, and providing valuable feedback to guide your learning journey.","body":"Homework assignments are a fundamental component of the educational methodology at Bondar Academy, especially in technical education where learning a new programming language or framework is involved. The key to mastering these skills lies in writing code; the more you write, the better you become. However, merely replicating code seen in lectures leads to minimal learning. Often, this approach leaves students unclear about why their code works the way it does, as they focus on copying rather than understanding.\n\nA homework assignment at Bondar Academy starts with a blank page, challenging students to apply all their knowledge to write the first line of code. This process is more demanding than it appears. As you write each line, understanding and reasoning grow, making your code meaningful and comprehensible. You learn to write code that makes sense to you, enhancing your understanding.\n\nIn completing these assignments, you engage the 'thinking' part of your brain, transforming theoretical knowledge into practical skills. Recognizing the crucial role of homework in learning, our instructors at Bondar Academy are always available to assist with any challenges. Just reach out on Slack, and you'll receive the guidance and support needed for successful completion. At Bondar Academy, we fully understand the importance of homework assignments for the best outcome, so our instructors are always here to assist if you have any difficulties with completing them. Just ask in Slack and you'll be guided and assisted.","tagList":["Homework","Assignments","Practice","Coding"],"createdAt":"2024-01-27T21:46:09.512Z","updatedAt":"2024-01-27T21:46:09.512Z","favorited":false,"favoritesCount":102,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Embracing-Daily-Git-Routines:-Real-Code-Reviews-on-GitHub-for-Effective-Coding-Practice.-1","title":"Embracing Daily Git Routines: Real Code Reviews on GitHub for Effective Coding Practice.","description":"Learning to code is just one part of a larger skill set; effectively managing and organizing code is equally crucial. At Bondar Academy, we integrate Git and platforms like GitHub into the core learning cycle. With us, using Git becomes a regular routine, where organizing code in branches, storing it in remote repositories, and collaborating with others through strategies like branching, merging, pull requests, and code reviews are standard practice.","body":"At Bondar Academy, mastering Git and GitHub is a fundamental step before delving into frameworks or programming languages. Effective code management, organization, and storage are crucial skills, and Git is the premier tool for this purpose. However, many learners initially find Git challenging due to its complexity and non-intuitive nature. To address this, our instructors have developed structured lectures on Git and GitHub, ensuring an efficient and thorough understanding of these essential tools. Git lessons are a mandatory prerequisite in every class. For a glimpse into our teaching approach, visit our YouTube channel: https://www.youtube.com/@BondarAcademy/playlists.\n\nIn our courses, all homework assignments are reviewed using GitHub pull requests, mirroring the workflow in real-world software development environments. Students submit their code to their working branch for review. Our instructors then provide feedback, suggesting modifications or adjustments for pull request approval. This iterative process is repeated throughout the course, establishing Git usage as a natural and routine part of your coding practice.","tagList":["YouTube","Git","GitHub"],"createdAt":"2024-01-27T21:42:31.491Z","updatedAt":"2024-01-27T21:42:31.491Z","favorited":false,"favoritesCount":103,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Engaging-in-Live-Zoom-Sessions:-Interact-with-Instructors-and-Peers-Ask-Questions-in-Real-Time-1","title":"Engaging in Live Zoom Sessions: Interact with Instructors and Peers, Ask Questions in Real-Time","description":"In our increasingly online world, personal engagement remains a crucial element of effective learning. At Bondar Academy, we address this by hosting live Zoom sessions. These sessions provide a platform for live interaction between instructors and students, and among students themselves. Complementing our Slack channel, these live sessions offer an additional avenue for asking questions and engaging in meaningful discussions.","body":"In our increasingly online world, personal engagement remains a crucial element of effective learning. \nAt Bondar Academy, we address this by hosting live Zoom sessions. These sessions provide a platform for live interaction between instructors and students and among students themselves. Complementing our Slack channel, these live sessions offer an additional avenue for asking questions and engaging in meaningful discussions.","tagList":["Zoom","Live Sessions"],"createdAt":"2024-01-27T21:39:50.587Z","updatedAt":"2024-01-27T21:39:50.587Z","favorited":false,"favoritesCount":75,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Utilizing-Slack-for-Continuous-Engagement:-Connect-with-Instructors-Share-Insights-and-Collaborate-1","title":"Utilizing Slack for Continuous Engagement: Connect with Instructors, Share Insights, and Collaborate","description":"Slack stands out as a widely-used messaging and collaboration platform, celebrated for its convenience and versatility. It enables simultaneous participation in multiple conversations, supports comments and emoji reactions, and allows users to share screenshots, videos, and code snippets. Its functionality extends to making calls in huddle sessions. Given these robust features, Bondar Academy has chosen Slack as our primary communication platform, facilitating seamless interaction and collaboration.","body":"As a new member of Bondar Academy, one of your initial steps should be registering for the Bondar Academy Slack Workspace. Upon registration at Bondar Academy, you'll receive a welcome email containing the URL to join. This Workspace serves as a central hub for communication with instructors and fellow students. Whether you have a question, need to share code, or want to upload screenshots, Slack makes it easy and efficient. Moreover, its compatibility with both desktop and mobile devices, by downloading and installing the app, ensures you can stay connected with your instructors and the community wherever you go.","tagList":["Slack","Community","Collaboration"],"createdAt":"2024-01-27T21:38:27.992Z","updatedAt":"2024-01-27T21:38:27.992Z","favorited":false,"favoritesCount":70,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Stay-Ahead-with-Bondar-Academy:-Subscribe-to-Our-YouTube-channel-for-Latest-Tech-and-Education-Updates-1","title":"Stay Ahead with Bondar Academy: Subscribe to Our YouTube channel for Latest Tech and Education Updates","description":"Who doesn't appreciate high-quality free resources? YouTube serves as an ideal platform for sharing the latest news, updates, and a wealth of tips and tricks in test automation and technology. Keep abreast of these invaluable insights by subscribing to the @bondaracademy YouTube channel.","body":"Who doesn't appreciate high-quality free resources? \n\nYouTube serves as an ideal platform for sharing the latest news, updates, and a wealth of tips and tricks in test automation and technology. \n\nKeep abreast of these invaluable insights by subscribing to our YouTube channel: https://www.youtube.com/@bondaracademy","tagList":["YouTube"],"createdAt":"2024-01-27T21:36:32.360Z","updatedAt":"2024-01-27T21:36:32.360Z","favorited":false,"favoritesCount":66,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Explore-the-Latest-in-Learning:-Bondar-Academy-Blog's-Educational-Insights-from-Our-Experts-1","title":"Explore the Latest in Learning: Bondar Academy Blog's Educational Insights from Our Experts","description":"Discover a treasure trove of knowledge on the Bondar Academy blog. Here, we share an array of tips, techniques, and valuable educational materials, all designed to keep you abreast of the latest technological trends and best practices. For easy access and continual learning, consider bookmarking our blog in your browser.","body":"On the Bondar Academy blog, we consistently provide insightful and pertinent updates on the latest in technology, test automation, and industry best practices. For your convenience, we recommend adding our blog to your browser's bookmarks. Our commitment to keeping you informed is reflected in our weekly posts, each focusing on a significant topic of the week.\n\nWe value your input and invite you to contribute to our ever-evolving content. If you have any suggestions or specific topics you'd like us to explore, please feel free to share your ideas in the Bondar Academy Slack workspace. \n\nDiscover our blog here: https://www.bondaracademy.com/blog\n","tagList":["Blog"],"createdAt":"2024-01-27T21:34:04.531Z","updatedAt":"2024-01-27T21:34:04.531Z","favorited":false,"favoritesCount":67,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"Take-the-Next-Step:-Join-Bondar-Academy-Today-and-Enroll-into-the-class-1","title":"Take the Next Step: Join Bondar Academy Today and Enroll into the class","description":"Are you prepared to transform your educational journey? Begin by signing up at Bondar Academy, then register for our Slack Workspace to start exploring. We offer a range of classes, with some being completely free and others featuring free previews of the initial sections. This allows you to experience our content and teaching approach firsthand, helping you make an informed decision before enrolling in a class.","body":"Are you prepared to transform your educational journey? \n\nBegin by signing up at Bondar Academy, then register for our Slack Workspace to start exploring. We offer a range of classes, with some being completely free and others featuring free previews of the initial sections. This allows you to experience our content and teaching approach firsthand, helping you make an informed decision before enrolling in a class.\n\nClick here to enroll: https://www.bondaracademy.com","tagList":["Enroll","Start for Free"],"createdAt":"2024-01-27T21:32:21.056Z","updatedAt":"2024-01-27T21:32:21.056Z","favorited":false,"favoritesCount":71,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}}],"articlesCount":10}
+classpath:conduitApp/feature/HomeWork.feature:101
+18:06:55.014 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+18:11:01.086 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+18:11:01.879 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:11:01.882 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771024261880
+18:11:01.888 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+18:11:02.845 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:11:02.895 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+18:11:03.121 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+18:11:03.582 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 458
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-RJrlIBxBiOuRYMzaWl1PIXQjecg"
+1 < x-cloud-trace-context: ac53031b48e72ec4564a16826a66f333
+1 < date: Fri, 13 Feb 2026 23:11:03 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDI2MywiZXhwIjoxNzc2MjA4MjYzfQ.6Y9UH4t6hWZkaRDxJDTSBDKtHNeKVeu5J_S_WDycswY"}}
+
+18:11:03.594 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDI2MywiZXhwIjoxNzc2MjA4MjYzfQ.6Y9UH4t6hWZkaRDxJDTSBDKtHNeKVeu5J_S_WDycswY 
+18:11:03.595 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+18:11:03.596 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+18:11:03.601 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+18:11:03.612 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDI2MywiZXhwIjoxNzc2MjA4MjYzfQ.6Y9UH4t6hWZkaRDxJDTSBDKtHNeKVeu5J_S_WDycswY
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:11:03.827 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 214
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: 049c8694997c585f1130c92256328979
+1 < date: Fri, 13 Feb 2026 23:11:03 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+18:11:03.835 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:102
+Then status 304
+status code was: 200, expected: 304, response time in milliseconds: 214, url: https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0, response: 
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+classpath:conduitApp/feature/HomeWork.feature:102
+18:11:04.446 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+18:11:41.626 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+18:11:42.330 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:11:42.333 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771024302331
+18:11:42.339 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+18:11:43.278 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:11:43.326 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+18:11:43.554 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+18:11:44.032 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 475
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-vrgQgzOjo/66AhZv0xXJL7dsY3g"
+1 < x-cloud-trace-context: b1edabf7e4037eccd77fa7f415a0f7f0
+1 < date: Fri, 13 Feb 2026 23:11:44 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDMwNCwiZXhwIjoxNzc2MjA4MzA0fQ.GsAD_Pcm7gla0cqMDCHYSSX_x-jESsKNpP_pT9T-Uqk"}}
+
+18:11:44.044 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDMwNCwiZXhwIjoxNzc2MjA4MzA0fQ.GsAD_Pcm7gla0cqMDCHYSSX_x-jESsKNpP_pT9T-Uqk 
+18:11:44.046 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+18:11:44.047 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+18:11:44.051 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+18:11:44.061 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDMwNCwiZXhwIjoxNzc2MjA4MzA0fQ.GsAD_Pcm7gla0cqMDCHYSSX_x-jESsKNpP_pT9T-Uqk
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:11:44.250 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 188
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: 3593532679779e219647cb71f2f7b6d2
+1 < date: Fri, 13 Feb 2026 23:11:44 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+18:11:44.848 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+18:15:16.636 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+18:15:17.341 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:15:17.344 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771024517342
+18:15:17.349 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+18:15:18.298 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:15:18.352 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+18:15:18.590 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+18:15:19.203 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 611
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-s89A/NqW9gmtcl6jBsGl7Evnm94"
+1 < x-cloud-trace-context: 2b292e1cb07a817f618b790bab7ec0ba;o=1
+1 < date: Fri, 13 Feb 2026 23:15:19 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDUxOSwiZXhwIjoxNzc2MjA4NTE5fQ.c7g0R7inPQfyjPFF8xygjumxxcPENt7aRAIKLOnsUw0"}}
+
+18:15:19.216 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDUxOSwiZXhwIjoxNzc2MjA4NTE5fQ.c7g0R7inPQfyjPFF8xygjumxxcPENt7aRAIKLOnsUw0 
+18:15:19.217 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+18:15:19.218 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+18:15:19.223 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+18:15:19.233 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDUxOSwiZXhwIjoxNzc2MjA4NTE5fQ.c7g0R7inPQfyjPFF8xygjumxxcPENt7aRAIKLOnsUw0
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:15:19.476 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 241
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: 5086e56fb3f389167e15a4269e23322b
+1 < date: Fri, 13 Feb 2026 23:15:19 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+18:15:19.494 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNDUxOSwiZXhwIjoxNzc2MjA4NTE5fQ.c7g0R7inPQfyjPFF8xygjumxxcPENt7aRAIKLOnsUw0
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+18:15:19.686 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 191
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"f-DSK3s7cPAqrq+537gdA1gy8XGx8"
+2 < x-cloud-trace-context: 2737551ca536b3cb3be1848786feb353
+2 < date: Fri, 13 Feb 2026 23:15:19 GMT
+2 < server: Google Frontend
+2 < Content-Length: 15
+{"comments":[]}
+
+18:15:20.288 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+18:27:43.794 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+18:27:44.485 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:27:44.488 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771025264486
+18:27:44.494 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+18:27:45.478 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:27:45.531 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+18:27:45.759 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+18:27:46.302 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 539
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-Pb8W2NGdwV8+X3ZU7iWziLZ8fIk"
+1 < x-cloud-trace-context: 94ff86888feee07b8b700dbe7aae01d7;o=1
+1 < date: Fri, 13 Feb 2026 23:27:46 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNTI2NiwiZXhwIjoxNzc2MjA5MjY2fQ.RctMyUtBaSbSfUXkf7S8UXt8AM66RyPxKAQQhdIoMjk"}}
+
+18:27:46.315 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNTI2NiwiZXhwIjoxNzc2MjA5MjY2fQ.RctMyUtBaSbSfUXkf7S8UXt8AM66RyPxKAQQhdIoMjk 
+18:27:46.316 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+18:27:46.317 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+18:27:46.323 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+18:27:46.333 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNTI2NiwiZXhwIjoxNzc2MjA5MjY2fQ.RctMyUtBaSbSfUXkf7S8UXt8AM66RyPxKAQQhdIoMjk
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:27:46.528 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 193
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: 3f84467a2f274c1f55fc9f3566d522fc
+1 < date: Fri, 13 Feb 2026 23:27:46 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+18:27:46.545 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAyNTI2NiwiZXhwIjoxNzc2MjA5MjY2fQ.RctMyUtBaSbSfUXkf7S8UXt8AM66RyPxKAQQhdIoMjk
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+18:27:46.773 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 228
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"114-weHTQPUe4pYmz4gHzxPLNlsHF7Y"
+2 < x-cloud-trace-context: 115f9491e9a6dd7ff225d58464042ac4
+2 < date: Fri, 13 Feb 2026 23:27:46 GMT
+2 < server: Google Frontend
+2 < Content-Length: 276
+{"comments":[{"id":100508,"createdAt":"2026-02-13T23:24:40.758Z","updatedAt":"2026-02-13T23:24:40.758Z","body":"nice first incredible comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+18:27:47.383 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+22:11:36.250 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+22:11:36.983 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:11:36.987 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771038696984
+22:11:36.993 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+22:11:38.013 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:11:38.069 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:11:38.309 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+22:11:38.894 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 581
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-qoTdela1IlGaU4Llp790PbWGdes"
+1 < x-cloud-trace-context: 6cee8c8cb0bd26b7a9d968a1fd7f9cdb;o=1
+1 < date: Sat, 14 Feb 2026 03:11:38 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzODY5OCwiZXhwIjoxNzc2MjIyNjk4fQ.lUlGaaBa6d3Jm441gHU8zFgZhlCmXbSLIRdv0gqQ9mc"}}
+
+22:11:38.906 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzODY5OCwiZXhwIjoxNzc2MjIyNjk4fQ.lUlGaaBa6d3Jm441gHU8zFgZhlCmXbSLIRdv0gqQ9mc 
+22:11:38.907 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+22:11:38.908 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:11:38.913 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+22:11:38.924 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzODY5OCwiZXhwIjoxNzc2MjIyNjk4fQ.lUlGaaBa6d3Jm441gHU8zFgZhlCmXbSLIRdv0gqQ9mc
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:11:39.130 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 205
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: a480d97f7b1e3868eb193f4725deb993
+1 < date: Sat, 14 Feb 2026 03:11:39 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+22:11:39.147 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzODY5OCwiZXhwIjoxNzc2MjIyNjk4fQ.lUlGaaBa6d3Jm441gHU8zFgZhlCmXbSLIRdv0gqQ9mc
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+22:11:39.351 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 203
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"218-P68zX6BmL8avs4cRIWddEMyX0BA"
+2 < x-cloud-trace-context: 90757e8c7b46d4f508ed5a4e6a49e59e
+2 < date: Sat, 14 Feb 2026 03:11:39 GMT
+2 < server: Google Frontend
+2 < Content-Length: 536
+{"comments":[{"id":100508,"createdAt":"2026-02-13T23:24:40.758Z","updatedAt":"2026-02-13T23:24:40.758Z","body":"nice first incredible comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100509,"createdAt":"2026-02-14T03:09:37.539Z","updatedAt":"2026-02-14T03:09:37.539Z","body":"second nice awesome comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:11:39.367 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:132
+And match response == commentSchema
+match failed: EQUALS
+  $ | not equal | match failed for name: 'comments' (MAP:MAP)
+  {"comments":[{"id":100508,"createdAt":"2026-02-13T23:24:40.758Z","updatedAt":"2026-02-13T23:24:40.758Z","body":"nice first incredible comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100509,"createdAt":"2026-02-14T03:09:37.539Z","updatedAt":"2026-02-14T03:09:37.539Z","body":"second nice awesome comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+  {"comments":[{"id":"#number","createdAt":"#string","updatedAt":"#string","body":"#string","author":{"username":"#string","bio":"##string","image":"#string","following":"#boolean"}}]}
+
+    $.comments | not equal | actual array length is not equal to expected - 2:1 (LIST:LIST)
+    [{"id":100508,"createdAt":"2026-02-13T23:24:40.758Z","updatedAt":"2026-02-13T23:24:40.758Z","body":"nice first incredible comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100509,"createdAt":"2026-02-14T03:09:37.539Z","updatedAt":"2026-02-14T03:09:37.539Z","body":"second nice awesome comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]
+    [{"id":"#number","createdAt":"#string","updatedAt":"#string","body":"#string","author":{"username":"#string","bio":"##string","image":"#string","following":"#boolean"}}]
+
+
+classpath:conduitApp/feature/HomeWork.feature:132
+22:11:40.036 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+22:14:31.791 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+22:14:32.544 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:14:32.548 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771038872546
+22:14:32.554 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+22:14:33.533 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:14:33.590 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:14:33.823 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+22:14:34.298 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 471
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-Q2snLy54VT9ksN2pOJ2BW6MVRTU"
+1 < x-cloud-trace-context: 3ea7e821045b6715e9629fc358644d4f
+1 < date: Sat, 14 Feb 2026 03:14:34 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzODg3NCwiZXhwIjoxNzc2MjIyODc0fQ.REFuKfvYCAXoYIwTbXHRSieEQxO3VDeIMwq3CBHY2V4"}}
+
+22:14:34.310 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzODg3NCwiZXhwIjoxNzc2MjIyODc0fQ.REFuKfvYCAXoYIwTbXHRSieEQxO3VDeIMwq3CBHY2V4 
+22:14:34.311 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+22:14:34.312 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:14:34.317 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+22:14:34.326 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzODg3NCwiZXhwIjoxNzc2MjIyODc0fQ.REFuKfvYCAXoYIwTbXHRSieEQxO3VDeIMwq3CBHY2V4
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:14:34.530 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 202
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: 2a8de22f45b2025b2ddba7d2f06bcbce
+1 < date: Sat, 14 Feb 2026 03:14:34 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+22:14:34.547 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzODg3NCwiZXhwIjoxNzc2MjIyODc0fQ.REFuKfvYCAXoYIwTbXHRSieEQxO3VDeIMwq3CBHY2V4
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+22:14:34.811 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 264
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"218-P68zX6BmL8avs4cRIWddEMyX0BA"
+2 < x-cloud-trace-context: d13810bce68da73e6e6aa6f3c1754088
+2 < date: Sat, 14 Feb 2026 03:14:34 GMT
+2 < server: Google Frontend
+2 < Content-Length: 536
+{"comments":[{"id":100508,"createdAt":"2026-02-13T23:24:40.758Z","updatedAt":"2026-02-13T23:24:40.758Z","body":"nice first incredible comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100509,"createdAt":"2026-02-14T03:09:37.539Z","updatedAt":"2026-02-14T03:09:37.539Z","body":"second nice awesome comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:14:34.830 [pool-2-thread-1] INFO  com.intuit.karate - === Initial comments count: 2 === 
+22:14:35.479 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+22:25:38.827 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+22:25:39.581 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:25:39.584 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771039539582
+22:25:39.590 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+22:25:40.529 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:25:40.583 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:25:40.812 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+22:25:41.392 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-J0E22lFrODING97R2adj5vbYiAw"
+1 < x-cloud-trace-context: 13992064dc57b920bc4f547a10898803;o=1
+1 < date: Sat, 14 Feb 2026 03:25:41 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTU0MSwiZXhwIjoxNzc2MjIzNTQxfQ.r4ru0aV4ateCopvoRXklClj5VQkEc_UDVXJeGLK3p-g"}}
+
+22:25:41.406 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTU0MSwiZXhwIjoxNzc2MjIzNTQxfQ.r4ru0aV4ateCopvoRXklClj5VQkEc_UDVXJeGLK3p-g 
+22:25:41.408 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+22:25:41.409 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:25:41.414 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+22:25:41.425 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTU0MSwiZXhwIjoxNzc2MjIzNTQxfQ.r4ru0aV4ateCopvoRXklClj5VQkEc_UDVXJeGLK3p-g
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:25:41.646 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 221
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: c4668e87e57d05f9751c93242e9426e0
+1 < date: Sat, 14 Feb 2026 03:25:41 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+22:25:41.664 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTU0MSwiZXhwIjoxNzc2MjIzNTQxfQ.r4ru0aV4ateCopvoRXklClj5VQkEc_UDVXJeGLK3p-g
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+22:25:42.003 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 338
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"31f-hKbjVJ1AN6fNvy6CIvRagWgtzhI"
+2 < x-cloud-trace-context: 4c577c28b1fefd3a93fa7642e57b6837
+2 < date: Sat, 14 Feb 2026 03:25:42 GMT
+2 < server: Google Frontend
+2 < Content-Length: 799
+{"comments":[{"id":100508,"createdAt":"2026-02-13T23:24:40.758Z","updatedAt":"2026-02-13T23:24:40.758Z","body":"nice first incredible comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100509,"createdAt":"2026-02-14T03:09:37.539Z","updatedAt":"2026-02-14T03:09:37.539Z","body":"second nice awesome comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100513,"createdAt":"2026-02-14T03:15:42.642Z","updatedAt":"2026-02-14T03:15:42.642Z","body":"last comment to check the post","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:25:42.022 [pool-2-thread-1] INFO  com.intuit.karate - === Initial comments count: 3 === 
+22:25:42.024 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+3 > POST https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTU0MSwiZXhwIjoxNzc2MjIzNTQxfQ.r4ru0aV4ateCopvoRXklClj5VQkEc_UDVXJeGLK3p-g
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 82
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+3 > Accept-Encoding: gzip,deflate
+{"comment":{"body":"change here later to use a random value from Data Generator"}}
+
+22:25:42.302 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 277
+3 < 200
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < content-type: application/json; charset=utf-8
+3 < etag: W/"12f-rRsG3xs46OLbJ+qydCtqlIagtdI"
+3 < x-cloud-trace-context: 6e69a6a7ecf1e07e896083770609b93a
+3 < date: Sat, 14 Feb 2026 03:25:42 GMT
+3 < server: Google Frontend
+3 < Content-Length: 303
+{"comment":{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+22:25:42.315 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+4 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTU0MSwiZXhwIjoxNzc2MjIzNTQxfQ.r4ru0aV4ateCopvoRXklClj5VQkEc_UDVXJeGLK3p-g
+4 > Host: conduit-api.bondaracademy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+4 > Accept-Encoding: gzip,deflate
+
+
+22:25:42.590 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 257
+4 < 200
+4 < x-powered-by: Express
+4 < vary: Origin
+4 < content-type: application/json; charset=utf-8
+4 < etag: W/"443-TWfjzp0x9E0/lS+qaMnqCs3xunI"
+4 < x-cloud-trace-context: 8960686893e35e91acfbc703bf5d7ba0
+4 < date: Sat, 14 Feb 2026 03:25:42 GMT
+4 < server: Google Frontend
+4 < Content-Length: 1091
+{"comments":[{"id":100508,"createdAt":"2026-02-13T23:24:40.758Z","updatedAt":"2026-02-13T23:24:40.758Z","body":"nice first incredible comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100509,"createdAt":"2026-02-14T03:09:37.539Z","updatedAt":"2026-02-14T03:09:37.539Z","body":"second nice awesome comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100513,"createdAt":"2026-02-14T03:15:42.642Z","updatedAt":"2026-02-14T03:15:42.642Z","body":"last comment to check the post","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:25:43.248 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+22:28:25.513 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+22:28:26.241 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:28:26.244 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771039706242
+22:28:26.252 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+22:28:27.239 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:28:27.289 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:28:27.517 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+22:28:27.985 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 464
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-dWCToVFSNWplra6aHv9RQdq/1sE"
+1 < x-cloud-trace-context: ef1a6c35e21441b9013ff42e671721ab;o=1
+1 < date: Sat, 14 Feb 2026 03:28:28 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTcwOCwiZXhwIjoxNzc2MjIzNzA4fQ.GiBKTYhIoQn8gokdmXsNMObIFWR6moCyj5X9ibvUapw"}}
+
+22:28:27.997 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTcwOCwiZXhwIjoxNzc2MjIzNzA4fQ.GiBKTYhIoQn8gokdmXsNMObIFWR6moCyj5X9ibvUapw 
+22:28:27.999 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+22:28:28.000 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:28:28.004 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+22:28:28.014 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTcwOCwiZXhwIjoxNzc2MjIzNzA4fQ.GiBKTYhIoQn8gokdmXsNMObIFWR6moCyj5X9ibvUapw
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:28:28.273 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 257
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: ff05114b16b293a7b042fc9e49f719f7
+1 < date: Sat, 14 Feb 2026 03:28:28 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+22:28:28.290 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTcwOCwiZXhwIjoxNzc2MjIzNzA4fQ.GiBKTYhIoQn8gokdmXsNMObIFWR6moCyj5X9ibvUapw
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+22:28:28.610 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 320
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"33f-jAtFvyHegZW1fi9v4JBujzPv2nw"
+2 < x-cloud-trace-context: 7d33ddf56acb8efc5a43b327f4fb2c31
+2 < date: Sat, 14 Feb 2026 03:28:28 GMT
+2 < server: Google Frontend
+2 < Content-Length: 831
+{"comments":[{"id":100508,"createdAt":"2026-02-13T23:24:40.758Z","updatedAt":"2026-02-13T23:24:40.758Z","body":"nice first incredible comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100513,"createdAt":"2026-02-14T03:15:42.642Z","updatedAt":"2026-02-14T03:15:42.642Z","body":"last comment to check the post","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:28:28.629 [pool-2-thread-1] INFO  com.intuit.karate - === Initial comments count: 3 === 
+22:28:28.632 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+3 > POST https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTcwOCwiZXhwIjoxNzc2MjIzNzA4fQ.GiBKTYhIoQn8gokdmXsNMObIFWR6moCyj5X9ibvUapw
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 82
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+3 > Accept-Encoding: gzip,deflate
+{"comment":{"body":"change here later to use a random value from Data Generator"}}
+
+22:28:28.836 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 204
+3 < 200
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < content-type: application/json; charset=utf-8
+3 < etag: W/"12f-M8M4jDhKzvcCagMly6ImcaqEpLY"
+3 < x-cloud-trace-context: ef37d2b5d96a303d50155bd3bdf6594b
+3 < date: Sat, 14 Feb 2026 03:28:28 GMT
+3 < server: Google Frontend
+3 < Content-Length: 303
+{"comment":{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+22:28:28.843 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+4 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTcwOCwiZXhwIjoxNzc2MjIzNzA4fQ.GiBKTYhIoQn8gokdmXsNMObIFWR6moCyj5X9ibvUapw
+4 > Host: conduit-api.bondaracademy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+4 > Accept-Encoding: gzip,deflate
+
+
+22:28:29.117 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 273
+4 < 200
+4 < x-powered-by: Express
+4 < vary: Origin
+4 < content-type: application/json; charset=utf-8
+4 < etag: W/"463-ci3ChXp8acmmE1/KijD6BfOUeGQ"
+4 < x-cloud-trace-context: 7bb82b49357cf91632b239ec1ed5f6cf
+4 < date: Sat, 14 Feb 2026 03:28:29 GMT
+4 < server: Google Frontend
+4 < Content-Length: 1123
+{"comments":[{"id":100508,"createdAt":"2026-02-13T23:24:40.758Z","updatedAt":"2026-02-13T23:24:40.758Z","body":"nice first incredible comment","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100513,"createdAt":"2026-02-14T03:15:42.642Z","updatedAt":"2026-02-14T03:15:42.642Z","body":"last comment to check the post","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:28:29.125 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+5 > DELETE https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments/100508
+5 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTcwOCwiZXhwIjoxNzc2MjIzNzA4fQ.GiBKTYhIoQn8gokdmXsNMObIFWR6moCyj5X9ibvUapw
+5 > Host: conduit-api.bondaracademy.com
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+5 > Accept-Encoding: gzip,deflate
+
+
+22:28:29.331 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 205
+5 < 200
+5 < x-powered-by: Express
+5 < vary: Origin
+5 < content-type: application/json; charset=utf-8
+5 < etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+5 < x-cloud-trace-context: 56a5be168b87ae64ea9314e18e2b53e6
+5 < date: Sat, 14 Feb 2026 03:28:29 GMT
+5 < server: Google Frontend
+5 < Content-Length: 2
+{}
+
+22:28:30.018 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+22:29:30.737 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+22:29:31.527 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:29:31.531 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771039771529
+22:29:31.538 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+22:29:32.503 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:29:32.555 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:29:32.790 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+22:29:33.274 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 480
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-MhhXM5hVo5UoAF04e0ujzqR7u98"
+1 < x-cloud-trace-context: 5cd9a3609ad7efd8f062199cb81195e8;o=1
+1 < date: Sat, 14 Feb 2026 03:29:33 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTc3MywiZXhwIjoxNzc2MjIzNzczfQ.D9HhLu6t7tuAdZo01fwIeyq9xIqMtBOHM6qh9QWRk2c"}}
+
+22:29:33.286 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTc3MywiZXhwIjoxNzc2MjIzNzczfQ.D9HhLu6t7tuAdZo01fwIeyq9xIqMtBOHM6qh9QWRk2c 
+22:29:33.287 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+22:29:33.288 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:29:33.293 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+22:29:33.304 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTc3MywiZXhwIjoxNzc2MjIzNzczfQ.D9HhLu6t7tuAdZo01fwIeyq9xIqMtBOHM6qh9QWRk2c
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:29:33.601 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 296
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: c7632fe5af19eff2181c61cfa8610fd5
+1 < date: Sat, 14 Feb 2026 03:29:33 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+22:29:33.618 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTc3MywiZXhwIjoxNzc2MjIzNzczfQ.D9HhLu6t7tuAdZo01fwIeyq9xIqMtBOHM6qh9QWRk2c
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+22:29:33.805 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 186
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"35d-9uUXbOCQ+Q1/WSuyRY6fWqL4Vf0"
+2 < x-cloud-trace-context: f8165ebd27476a128a78acffee3c5136
+2 < date: Sat, 14 Feb 2026 03:29:33 GMT
+2 < server: Google Frontend
+2 < Content-Length: 861
+{"comments":[{"id":100513,"createdAt":"2026-02-14T03:15:42.642Z","updatedAt":"2026-02-14T03:15:42.642Z","body":"last comment to check the post","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:29:33.823 [pool-2-thread-1] INFO  com.intuit.karate - === Initial comments count: 3 === 
+22:29:33.826 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+3 > POST https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTc3MywiZXhwIjoxNzc2MjIzNzczfQ.D9HhLu6t7tuAdZo01fwIeyq9xIqMtBOHM6qh9QWRk2c
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 82
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+3 > Accept-Encoding: gzip,deflate
+{"comment":{"body":"change here later to use a random value from Data Generator"}}
+
+22:29:34.027 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 200
+3 < 200
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < content-type: application/json; charset=utf-8
+3 < etag: W/"12f-PBGX0K0OCWSdbcu+IxsYsMUwss4"
+3 < x-cloud-trace-context: ab75c542426697e2b507de62c6796d5b
+3 < date: Sat, 14 Feb 2026 03:29:34 GMT
+3 < server: Google Frontend
+3 < Content-Length: 303
+{"comment":{"id":100516,"createdAt":"2026-02-14T03:29:34.079Z","updatedAt":"2026-02-14T03:29:34.079Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+22:29:34.033 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+4 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTc3MywiZXhwIjoxNzc2MjIzNzczfQ.D9HhLu6t7tuAdZo01fwIeyq9xIqMtBOHM6qh9QWRk2c
+4 > Host: conduit-api.bondaracademy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+4 > Accept-Encoding: gzip,deflate
+
+
+22:29:34.311 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 278
+4 < 200
+4 < x-powered-by: Express
+4 < vary: Origin
+4 < content-type: application/json; charset=utf-8
+4 < etag: W/"481-q/XkmIpNKXckeLmRdCtxTBStvuw"
+4 < x-cloud-trace-context: a24f10bbdfbabddfb1e751df1edd4dcd
+4 < date: Sat, 14 Feb 2026 03:29:34 GMT
+4 < server: Google Frontend
+4 < Content-Length: 1153
+{"comments":[{"id":100513,"createdAt":"2026-02-14T03:15:42.642Z","updatedAt":"2026-02-14T03:15:42.642Z","body":"last comment to check the post","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100516,"createdAt":"2026-02-14T03:29:34.079Z","updatedAt":"2026-02-14T03:29:34.079Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:29:34.320 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+5 > DELETE https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments/100513
+5 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTc3MywiZXhwIjoxNzc2MjIzNzczfQ.D9HhLu6t7tuAdZo01fwIeyq9xIqMtBOHM6qh9QWRk2c
+5 > Host: conduit-api.bondaracademy.com
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+5 > Accept-Encoding: gzip,deflate
+
+
+22:29:34.521 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 200
+5 < 200
+5 < x-powered-by: Express
+5 < vary: Origin
+5 < content-type: application/json; charset=utf-8
+5 < etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+5 < x-cloud-trace-context: 0d59c68ba2a92179583d59d2c6391464
+5 < date: Sat, 14 Feb 2026 03:29:34 GMT
+5 < server: Google Frontend
+5 < Content-Length: 2
+{}
+
+22:29:34.524 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+6 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+6 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTc3MywiZXhwIjoxNzc2MjIzNzczfQ.D9HhLu6t7tuAdZo01fwIeyq9xIqMtBOHM6qh9QWRk2c
+6 > Host: conduit-api.bondaracademy.com
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+6 > Accept-Encoding: gzip,deflate
+
+
+22:29:34.806 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 281
+6 < 200
+6 < x-powered-by: Express
+6 < vary: Origin
+6 < content-type: application/json; charset=utf-8
+6 < etag: W/"37a-qggRQZhphXCN1MH4yuz4CIMXGC4"
+6 < x-cloud-trace-context: 5919fd64a8271519be7780f0f2037551
+6 < date: Sat, 14 Feb 2026 03:29:34 GMT
+6 < server: Google Frontend
+6 < Content-Length: 890
+{"comments":[{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100516,"createdAt":"2026-02-14T03:29:34.079Z","updatedAt":"2026-02-14T03:29:34.079Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:29:35.493 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+22:33:16.700 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+22:33:17.515 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:33:17.519 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771039997516
+22:33:17.525 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+22:33:18.490 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:33:18.539 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:33:18.763 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+22:33:19.326 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 560
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-T9MXkkVNQ6OdSd8An0t6XmT2yNI"
+1 < x-cloud-trace-context: 4664a93a27db3e60037d787fbeef40a8;o=1
+1 < date: Sat, 14 Feb 2026 03:33:19 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTk5OSwiZXhwIjoxNzc2MjIzOTk5fQ.HOiHUHGJw_f3b5PLrSAUZwy_J-_h_8uRlYx1o5wHmX8"}}
+
+22:33:19.338 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTk5OSwiZXhwIjoxNzc2MjIzOTk5fQ.HOiHUHGJw_f3b5PLrSAUZwy_J-_h_8uRlYx1o5wHmX8 
+22:33:19.339 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+22:33:19.340 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:33:19.345 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+22:33:19.435 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTk5OSwiZXhwIjoxNzc2MjIzOTk5fQ.HOiHUHGJw_f3b5PLrSAUZwy_J-_h_8uRlYx1o5wHmX8
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:33:19.679 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 244
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: 65668ed4dafa4980c46af285f2a5751d
+1 < date: Sat, 14 Feb 2026 03:33:19 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+22:33:19.697 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTk5OSwiZXhwIjoxNzc2MjIzOTk5fQ.HOiHUHGJw_f3b5PLrSAUZwy_J-_h_8uRlYx1o5wHmX8
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+22:33:19.959 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 261
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"37a-qggRQZhphXCN1MH4yuz4CIMXGC4"
+2 < x-cloud-trace-context: 119655535f8297e21beac1dcff1e1b2d
+2 < date: Sat, 14 Feb 2026 03:33:19 GMT
+2 < server: Google Frontend
+2 < Content-Length: 890
+{"comments":[{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100516,"createdAt":"2026-02-14T03:29:34.079Z","updatedAt":"2026-02-14T03:29:34.079Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:33:19.978 [pool-2-thread-1] INFO  com.intuit.karate - === Initial comments count: 3 === 
+22:33:19.980 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+3 > POST https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTAzOTk5OSwiZXhwIjoxNzc2MjIzOTk5fQ.HOiHUHGJw_f3b5PLrSAUZwy_J-_h_8uRlYx1o5wHmX8
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 40
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+3 > Accept-Encoding: gzip,deflate
+{"comment":{"body":"randomCommentBody"}}
+
+22:33:20.200 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 219
+3 < 200
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < content-type: application/json; charset=utf-8
+3 < etag: W/"105-XVsfb1am/kxuvMl8BYr2Tea08QQ"
+3 < x-cloud-trace-context: 3621314dabdcc7f7cae34374e4db6505
+3 < date: Sat, 14 Feb 2026 03:33:20 GMT
+3 < server: Google Frontend
+3 < Content-Length: 261
+{"comment":{"id":100517,"createdAt":"2026-02-14T03:33:20.268Z","updatedAt":"2026-02-14T03:33:20.268Z","body":"randomCommentBody","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+22:33:20.205 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:157
+And match response.comment.body == randomCommentBody
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'randomCommentBody'
+  'Provident sint perferendis quia fugit libero quis.'
+
+classpath:conduitApp/feature/HomeWork.feature:157
+22:33:20.833 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+22:48:15.733 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+22:48:16.496 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:48:16.499 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771040896497
+22:48:16.506 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+22:48:17.470 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:48:17.522 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:48:17.746 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+22:48:18.276 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 526
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-X0pJIZ6CExM7d8RJAYj1tXs/Czk"
+1 < x-cloud-trace-context: 167ffd9c3ceaa011fc4060ef5e8a75b6;o=1
+1 < date: Sat, 14 Feb 2026 03:48:18 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MDg5OCwiZXhwIjoxNzc2MjI0ODk4fQ.sSV5_cDPgDqZKD5GF-6RMYZDikZq6tGKSOsMcAuPaJw"}}
+
+22:48:18.289 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MDg5OCwiZXhwIjoxNzc2MjI0ODk4fQ.sSV5_cDPgDqZKD5GF-6RMYZDikZq6tGKSOsMcAuPaJw 
+22:48:18.290 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+22:48:18.291 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:48:18.295 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+22:48:18.384 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MDg5OCwiZXhwIjoxNzc2MjI0ODk4fQ.sSV5_cDPgDqZKD5GF-6RMYZDikZq6tGKSOsMcAuPaJw
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:48:18.622 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 237
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: abff7e8b2bcd221a1cabcc979eb6d006
+1 < date: Sat, 14 Feb 2026 03:48:18 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+22:48:18.638 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MDg5OCwiZXhwIjoxNzc2MjI0ODk4fQ.sSV5_cDPgDqZKD5GF-6RMYZDikZq6tGKSOsMcAuPaJw
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+22:48:18.941 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 301
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"474-UgUG1ybtOJ+lw1gUc1lgcl0Tbqk"
+2 < x-cloud-trace-context: a2a1191e25544dfaddfd27f45ce8fd80
+2 < date: Sat, 14 Feb 2026 03:48:19 GMT
+2 < server: Google Frontend
+2 < Content-Length: 1140
+{"comments":[{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100516,"createdAt":"2026-02-14T03:29:34.079Z","updatedAt":"2026-02-14T03:29:34.079Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100517,"createdAt":"2026-02-14T03:33:20.268Z","updatedAt":"2026-02-14T03:33:20.268Z","body":"randomCommentBody","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:48:18.960 [pool-2-thread-1] INFO  com.intuit.karate - === Initial comments count: 4 === 
+22:48:18.962 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:137
+And request { "comment": { "body": {randomCommentBody} } }
+net.minidev.json.parser.ParseException: Unexpected End Of File position 45: null
+classpath:conduitApp/feature/HomeWork.feature:137
+22:48:19.637 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
+22:49:58.770 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @homework
+22:49:59.502 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:49:59.506 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1771040999504
+22:49:59.511 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+22:50:00.457 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:50:00.509 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:50:00.739 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"elosvadel84@gmail.com","password":"Osva12345"}}
+
+22:50:01.222 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 479
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"136-EW2uc6MNQyTpSwLPCLHwN63L4hs"
+1 < x-cloud-trace-context: 5555f993523f9a650a8e02326127c86b;o=1
+1 < date: Sat, 14 Feb 2026 03:50:01 GMT
+1 < server: Google Frontend
+1 < Content-Length: 310
+{"user":{"email":"elosvadel84@gmail.com","username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4"}}
+
+22:50:01.234 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - TOKEN IS >>> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4 
+22:50:01.235 [pool-2-thread-1] INFO  com.intuit.karate - [print] INSIDE HELPER - USERNAME IS >>> Osva 
+22:50:01.236 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:conduitApp/helpers/CreateToken.feature')
+22:50:01.241 [pool-2-thread-1] INFO  com.intuit.karate - === Logged in user: Osva === 
+22:50:01.327 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:50:01.518 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 189
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"fea-fLOZSqlaucT47G8PrvF+ZYwjlxo"
+1 < x-cloud-trace-context: 9aeedc78ca376e34c37a7b8377c3dcbb
+1 < date: Sat, 14 Feb 2026 03:50:01 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4074
+{"articles":[{"slug":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546","title":"Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330","description":"Myr","body":"Fear cuts deeper than swords.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:59:09.658Z","updatedAt":"2026-02-13T22:59:09.658Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jorelle-Mormont-45546","title":"Jorelle Mormont","description":"Old Ghis","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":["Bondar Academy"],"createdAt":"2026-02-13T22:37:28.021Z","updatedAt":"2026-02-13T22:37:28.021Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Morya-Frey-45546","title":"Morya Frey","description":"Samyrian","body":"Do the dead frighten you?","tagList":["YouTube"],"createdAt":"2026-02-11T21:07:07.253Z","updatedAt":"2026-02-11T21:07:07.253Z","favorited":true,"favoritesCount":9,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-45546","title":"Harbert Paege","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Git"],"createdAt":"2026-02-11T20:51:34.764Z","updatedAt":"2026-02-11T20:51:34.764Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Tristimun-45546","title":"Tristimun","description":"White Harbor","body":"The things I do for love.","tagList":["GitHub"],"createdAt":"2026-02-11T20:35:34.834Z","updatedAt":"2026-02-11T20:35:34.834Z","favorited":true,"favoritesCount":1,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Mother-Mole-45546","title":"Mother Mole","description":"Sunspear","body":"Winter is coming.","tagList":["Blog"],"createdAt":"2026-02-11T20:33:18.422Z","updatedAt":"2026-02-11T20:33:18.422Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"High-Sparrow-45546","title":"High Sparrow","description":"Braavos","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":["Slack"],"createdAt":"2026-02-11T20:31:33.248Z","updatedAt":"2026-02-11T20:31:33.248Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Anguy-45546","title":"Anguy","description":"New Ghis","body":"Every flight begins with a fall.","tagList":["Blog"],"createdAt":"2026-02-11T17:59:58.529Z","updatedAt":"2026-02-11T17:59:58.529Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Kedry-45546","title":"Kedry","description":"Pentos","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Git"],"createdAt":"2026-02-11T17:54:53.795Z","updatedAt":"2026-02-11T17:54:53.795Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Yormwell-45546","title":"Yormwell","description":"Old Valyria","body":"The North remembers.","tagList":["Value-Focused"],"createdAt":"2026-02-11T16:14:56.387Z","updatedAt":"2026-02-11T16:14:56.387Z","favorited":false,"favoritesCount":0,"author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":47}
+
+22:50:01.533 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+22:50:01.713 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 178
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"474-UgUG1ybtOJ+lw1gUc1lgcl0Tbqk"
+2 < x-cloud-trace-context: f84e8dd05eca94d8c3b1f181fcefbbe4
+2 < date: Sat, 14 Feb 2026 03:50:01 GMT
+2 < server: Google Frontend
+2 < Content-Length: 1140
+{"comments":[{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100516,"createdAt":"2026-02-14T03:29:34.079Z","updatedAt":"2026-02-14T03:29:34.079Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100517,"createdAt":"2026-02-14T03:33:20.268Z","updatedAt":"2026-02-14T03:33:20.268Z","body":"randomCommentBody","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:50:01.732 [pool-2-thread-1] INFO  com.intuit.karate - === Initial comments count: 4 === 
+22:50:01.735 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+3 > POST https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 83
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+3 > Accept-Encoding: gzip,deflate
+{"comment":{"body":"Veritatis optio reprehenderit iste excepturi consequatur et."}}
+
+22:50:01.931 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 195
+3 < 200
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < content-type: application/json; charset=utf-8
+3 < etag: W/"130-FMnQ1PNTHbXZ6dYNe59+o90FoIA"
+3 < x-cloud-trace-context: a07c4902ebc89d4c5b0bdc1d94965d17
+3 < date: Sat, 14 Feb 2026 03:50:02 GMT
+3 < server: Google Frontend
+3 < Content-Length: 304
+{"comment":{"id":100518,"createdAt":"2026-02-14T03:50:02.023Z","updatedAt":"2026-02-14T03:50:02.023Z","body":"Veritatis optio reprehenderit iste excepturi consequatur et.","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+22:50:01.937 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+4 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
+4 > Host: conduit-api.bondaracademy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+4 > Accept-Encoding: gzip,deflate
+
+
+22:50:02.097 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 159
+4 < 200
+4 < x-powered-by: Express
+4 < vary: Origin
+4 < content-type: application/json; charset=utf-8
+4 < etag: W/"599-zglnXG+FHzN66ED/zc8449xKHJY"
+4 < x-cloud-trace-context: 5b3c91548213622ed3b25e25c3398e24
+4 < date: Sat, 14 Feb 2026 03:50:02 GMT
+4 < server: Google Frontend
+4 < Content-Length: 1433
+{"comments":[{"id":100514,"createdAt":"2026-02-14T03:25:42.337Z","updatedAt":"2026-02-14T03:25:42.337Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100516,"createdAt":"2026-02-14T03:29:34.079Z","updatedAt":"2026-02-14T03:29:34.079Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100517,"createdAt":"2026-02-14T03:33:20.268Z","updatedAt":"2026-02-14T03:33:20.268Z","body":"randomCommentBody","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100518,"createdAt":"2026-02-14T03:50:02.023Z","updatedAt":"2026-02-14T03:50:02.023Z","body":"Veritatis optio reprehenderit iste excepturi consequatur et.","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:50:02.106 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+5 > DELETE https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments/100514
+5 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
+5 > Host: conduit-api.bondaracademy.com
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+5 > Accept-Encoding: gzip,deflate
+
+
+22:50:02.292 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 186
+5 < 200
+5 < x-powered-by: Express
+5 < vary: Origin
+5 < content-type: application/json; charset=utf-8
+5 < etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+5 < x-cloud-trace-context: 29c9e3d02556b0dd76043ba48166a85f
+5 < date: Sat, 14 Feb 2026 03:50:02 GMT
+5 < server: Google Frontend
+5 < Content-Length: 2
+{}
+
+22:50:02.296 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+6 > GET https://conduit-api.bondaracademy.com/api/articles/Krazz-3ae044ec-d9f3-4ec2-b5d5-cbfd3d92f330-45546/comments
+6 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0NTU0Nn0sImlhdCI6MTc3MTA0MTAwMSwiZXhwIjoxNzc2MjI1MDAxfQ.KBD4i1wD30uL8YbS0ookuv1jzwaBPHOZSt2LMh3Sdp4
+6 > Host: conduit-api.bondaracademy.com
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+6 > Accept-Encoding: gzip,deflate
+
+
+22:50:02.480 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 182
+6 < 200
+6 < x-powered-by: Express
+6 < vary: Origin
+6 < content-type: application/json; charset=utf-8
+6 < etag: W/"475-mo+hDErmypINXWQJAsrs5L0dAbE"
+6 < x-cloud-trace-context: c201c5d8f5480ee312320a2043cdc567
+6 < date: Sat, 14 Feb 2026 03:50:02 GMT
+6 < server: Google Frontend
+6 < Content-Length: 1141
+{"comments":[{"id":100515,"createdAt":"2026-02-14T03:28:28.888Z","updatedAt":"2026-02-14T03:28:28.888Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100516,"createdAt":"2026-02-14T03:29:34.079Z","updatedAt":"2026-02-14T03:29:34.079Z","body":"change here later to use a random value from Data Generator","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100517,"createdAt":"2026-02-14T03:33:20.268Z","updatedAt":"2026-02-14T03:33:20.268Z","body":"randomCommentBody","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"id":100518,"createdAt":"2026-02-14T03:50:02.023Z","updatedAt":"2026-02-14T03:50:02.023Z","body":"Veritatis optio reprehenderit iste excepturi consequatur et.","author":{"username":"Osva","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}]}
+
+22:50:03.191 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:conduitApp/feature/HomeWork.feature
